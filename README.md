@@ -12,7 +12,7 @@ Guide bilingue (FR / EN) pour échapper à **Chat Control** et reprendre sa souv
 
 Site statique : dépose le dossier sur un hébergeur statique (Netlify, Vercel, Cloudflare Pages) ou sers `index.html` avec Caddy sur un VPS.
 
-Domaine : https://exitchatcontrol.eu
+Domaine : https://exitchatcontrol.org
 
 ## Licence
 

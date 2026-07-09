@@ -1,6 +1,6 @@
 # [Guide] Comment échapper à Chat Control et à la surveillance de vos messages
 
-**Le guide complet et gratuit est ici 👉 https://exitchatcontrol.eu. Partagez-le autour de vous, et surtout, faites migrer vos proches : la vie privée est un combat collectif.**
+**Le guide complet et gratuit est ici 👉 https://exitchatcontrol.org. Partagez-le autour de vous, et surtout, faites migrer vos proches : la vie privée est un combat collectif.**
 
 Le 9 juillet 2026, le Parlement européen a laissé passer Chat Control. Concrètement, le scan de nos messages privés est désormais autorisé dans l'Union, au nom de la « protection des enfants ». Une majorité d'eurodéputés a pourtant voté contre le texte, mais à cause d'une règle de procédure, il aurait fallu une majorité absolue pour le rejeter. Elle n'a pas été atteinte. La surveillance de masse est passée par la fenêtre.
 
@@ -75,6 +75,6 @@ Changer d'outils, ce n'est pas se cacher. C'est un acte citoyen, légal et pacif
 
 Le combat est aussi politique : soutenez les organisations qui s'y opposent et écrivez à vos élus, c'est ce qui a failli faire tomber Chat Control. Mais il se gagne surtout dans nos choix de tous les jours.
 
-**Le guide complet, avec chaque outil expliqué et installé pas à pas, du citoyen au lanceur d'alerte, est ici 👉 https://exitchatcontrol.eu. Enregistrez-le, partagez-le, faites migrer vos proches.**
+**Le guide complet, avec chaque outil expliqué et installé pas à pas, du citoyen au lanceur d'alerte, est ici 👉 https://exitchatcontrol.org. Enregistrez-le, partagez-le, faites migrer vos proches.**
 
 *Cet article sera mis à jour selon l'évolution de la situation. En cas de suppression de mon compte, vous le retrouverez sur mon site personnel.*
