@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node scripts/postbuild-offline.mjs",
+    "build": "tsc -b && vite build && node scripts/postbuild-en.mjs && node scripts/postbuild-offline.mjs",
     "preview": "vite preview",
     "check": "tsc --noEmit -p tsconfig.app.json",
     "lint": "eslint src --max-warnings 0",

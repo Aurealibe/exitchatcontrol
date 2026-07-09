@@ -35,6 +35,7 @@ const missing = SECTIONS.filter((id) => !html.includes(`id="${id}"`))
 check(`all ${SECTIONS.length} section anchors prerendered`, missing.length === 0, missing.join(','))
 
 check('both languages in the DOM', html.includes('data-l="fr"') && html.includes('data-l="en"'))
+check('fr page declares lang="fr" (prerenderer overwrite repaired)', html.includes('<html lang="fr" data-lang="fr">'))
 check('content actually prerendered (>200 KB)', html.length > 200_000, `${Math.round(html.length / 1024)} KB`)
 check('timeline events present', (html.match(/tl-item/g) ?? []).length >= 20, `${(html.match(/tl-item/g) ?? []).length}`)
 check('tool cards present', (html.match(/class="tg"/g) ?? []).length >= 40, `${(html.match(/class="tg"/g) ?? []).length}`)
@@ -69,6 +70,21 @@ check('no CDN icon requests', !html.includes('cdn.simpleicons.org') && !assets.s
 for (const f of ['sitemap.xml', 'robots.txt', 'favicon.svg', 'og.png', 'apple-touch-icon.png', 'exitchatcontrol-offline.html', '404.html', 'site.webmanifest', '.well-known/security.txt']) {
   check(`dist/${f} shipped`, existsSync(join(DIST, f)))
 }
+
+/* ─── ENGLISH landing battery (dist/en/ derived at postbuild) ─── */
+console.log('▸ english landing (/en/)')
+const enPath = join(DIST, 'en', 'index.html')
+check('dist/en/index.html shipped', existsSync(enPath))
+if (existsSync(enPath)) {
+  const en = readFileSync(enPath, 'utf8')
+  check('en: html defaults to english', en.includes('<html lang="en" data-lang="en">'))
+  check('en: english title', en.includes('<title>Becoming Ungovernable'))
+  check('en: canonical /en/', en.includes('href="https://exitchatcontrol.org/en/"'))
+  check('en: still fully bilingual DOM', en.includes('data-l="fr"') && en.includes('data-l="en"'))
+  check('en: og locale swapped', en.includes('content="en_GB"'))
+}
+const sitemapXml = readFileSync(join(DIST, 'sitemap.xml'), 'utf8')
+check('sitemap lists / and /en/ with hreflang cluster', sitemapXml.includes(`<loc>https://exitchatcontrol.org/en/</loc>`) && sitemapXml.includes('hreflang="x-default"'))
 
 /* ─── OFFLINE artifact battery ─── */
 console.log('▸ offline artifact (single file)')
@@ -115,6 +131,19 @@ try {
     // hydration sanity: the app re-rendered EN title after battery restored FR
     const langAttr = (dom.match(/<html[^>]*data-lang="([^"]+)"/) ?? [])[1]
     check('battery restored fr', langAttr === 'fr', langAttr)
+
+    /* /en/ must survive HYDRATION too — a '/'-only route table would 404
+       client-side and the router would wipe the prerendered page (caught
+       once by the vision loop; never again). The guide content must still
+       be in the DOM after React takes over. */
+    const domEn = execFileSync(
+      CHROME,
+      ['--headless=new', '--disable-gpu', '--dump-dom', `http://localhost:${PORT}/en/`],
+      { encoding: 'utf8', timeout: 60_000, killSignal: 'SIGKILL' },
+    )
+    check('/en/ hydrates without router 404', !domEn.includes('Unexpected Application Error') && domEn.includes('id="precedents"'))
+    const enLang = (domEn.match(/<html[^>]*data-lang="([^"]+)"/) ?? [])[1]
+    check('/en/ stays english after hydration', enLang === 'en', enLang)
   }
 } finally {
   server.kill()

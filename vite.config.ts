@@ -4,12 +4,10 @@ import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import reactSsg from 'vite-plugin-react-ssg'
-import { ORIGIN, PATHS } from './site.config'
+import { ORIGIN, PATHS, EN_PATH } from './site.config'
 
-/* sitemap.xml derived from the same PATHS array that drives the prerender —
-   one source of truth. hreflang alternates point at the ?lang= variants of
-   the single page (language is a client-side toggle, both languages ship in
-   the prerendered DOM). */
+/* sitemap.xml — the French page (/) and the derived English landing (/en/,
+   built by scripts/postbuild-en.mjs) as a proper hreflang cluster. */
 function sitemap(): Plugin {
   let outDir = 'dist'
   return {
@@ -20,20 +18,24 @@ function sitemap(): Plugin {
     },
     closeBundle() {
       const buildDate = new Date().toISOString().slice(0, 10)
-      const urls = PATHS.map((p) => {
-        const loc = p === '/' ? `${ORIGIN}/` : `${ORIGIN}${p}`
-        return (
-          `  <url>\n` +
-          `    <loc>${loc}</loc>\n` +
-          `    <lastmod>${buildDate}</lastmod>\n` +
-          `    <changefreq>weekly</changefreq>\n` +
-          `    <priority>1.0</priority>\n` +
-          `    <xhtml:link rel="alternate" hreflang="fr" href="${loc}?lang=fr" />\n` +
-          `    <xhtml:link rel="alternate" hreflang="en" href="${loc}?lang=en" />\n` +
-          `    <xhtml:link rel="alternate" hreflang="x-default" href="${loc}" />\n` +
-          `  </url>`
-        )
-      }).join('\n')
+      const alternates =
+        `    <xhtml:link rel="alternate" hreflang="fr" href="${ORIGIN}/" />\n` +
+        `    <xhtml:link rel="alternate" hreflang="en" href="${ORIGIN}${EN_PATH}" />\n` +
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}/" />`
+      const urls = [...PATHS, EN_PATH]
+        .map((p) => {
+          const loc = p === '/' ? `${ORIGIN}/` : `${ORIGIN}${p}`
+          return (
+            `  <url>\n` +
+            `    <loc>${loc}</loc>\n` +
+            `    <lastmod>${buildDate}</lastmod>\n` +
+            `    <changefreq>weekly</changefreq>\n` +
+            `    <priority>${p === '/' ? '1.0' : '0.9'}</priority>\n` +
+            `${alternates}\n` +
+            `  </url>`
+          )
+        })
+        .join('\n')
       const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`
       writeFileSync(join(outDir, 'sitemap.xml'), xml)
     },

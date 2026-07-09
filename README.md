@@ -41,8 +41,11 @@ pnpm icons      # régénère src/icons.generated.ts depuis simple-icons
 ## Publication
 
 Site statique : déposez `dist/` sur n'importe quel hébergeur statique (ou servez-le
-avec Caddy). Chaque build produit aussi **`dist/exitchatcontrol-offline.html`** :
-le guide entier en un seul fichier (~660 KB) — mirrorable, envoyable, archivable.
+avec Caddy). Chaque build produit aussi :
+- **`dist/en/index.html`** — la page d'atterrissage anglaise (`/en/`, même DOM
+  bilingue, tête et attributs EN par défaut, cluster hreflang propre) ;
+- **`dist/exitchatcontrol-offline.html`** — le guide entier en un seul fichier
+  (~380 KB, interactif sans React) — mirrorable, envoyable, archivable.
 
 Domaine : https://exitchatcontrol.org
 

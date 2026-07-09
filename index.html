@@ -12,9 +12,15 @@
         var root = document.documentElement
         try {
           var q = new URLSearchParams(location.search).get('lang')
+          /* /en/ is the English landing page: the path is the sharer's intent
+             and beats stored preference (an explicit ?lang= beats both).
+             NB: block comments ONLY in this inline script — the prerenderer's
+             head parser chokes on line comments and eats the <script> tag. */
+          var p = location.pathname.indexOf('/en') === 0 ? 'en' : null
           var s = localStorage.getItem('lang')
           var b = (navigator.language || 'en').toLowerCase()
-          var l = q === 'fr' || q === 'en' ? q : s === 'fr' || s === 'en' ? s : b.indexOf('fr') === 0 ? 'fr' : 'en'
+          var l =
+            q === 'fr' || q === 'en' ? q : p ? p : s === 'fr' || s === 'en' ? s : b.indexOf('fr') === 0 ? 'fr' : 'en'
           root.setAttribute('data-lang', l)
           root.setAttribute('lang', l)
           var qt = new URLSearchParams(location.search).get('theme')
@@ -82,8 +88,8 @@
     />
     <meta name="twitter:image" content="https://exitchatcontrol.org/og.png" />
     <link rel="canonical" href="https://exitchatcontrol.org/" />
-    <link rel="alternate" hreflang="fr" href="https://exitchatcontrol.org/?lang=fr" />
-    <link rel="alternate" hreflang="en" href="https://exitchatcontrol.org/?lang=en" />
+    <link rel="alternate" hreflang="fr" href="https://exitchatcontrol.org/" />
+    <link rel="alternate" hreflang="en" href="https://exitchatcontrol.org/en/" />
     <link rel="alternate" hreflang="x-default" href="https://exitchatcontrol.org/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

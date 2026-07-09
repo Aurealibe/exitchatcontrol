@@ -9,6 +9,10 @@ on:
     - cron: '0 6 * * 1'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   links:
     runs-on: ubuntu-latest
@@ -18,3 +22,12 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/check-links.mjs
+      - name: open triage issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # only runner-provided variables — no event-payload interpolation
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "link-rot: a cited primary source is failing" \
+            --body "The weekly link check found at least one broken citation. Run log: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID — fix or swap the source (see docs/RESEARCH.md for the citation policy)."
