@@ -26,7 +26,20 @@ export async function withBrowser(fn, { timeoutMs = 90_000 } = {}) {
     } catch {
       /* already dead */
     }
-    rmSync(profile, { recursive: true, force: true })
+    /* the SIGKILLed Chrome may still be releasing profile files (ENOTEMPTY
+       on Linux runners) — retry briefly, then let the OS tmp reaper have it;
+       cleanup must never fail the battery */
+    for (let i = 0; i < 5; i++) {
+      try {
+        rmSync(profile, { recursive: true, force: true })
+        break
+      } catch {
+        const until = Date.now() + 200
+        while (Date.now() < until) {
+          /* sync backoff: killAll must stay synchronous (setTimeout handler) */
+        }
+      }
+    }
   }
   const deadline = setTimeout(killAll, timeoutMs)
 
