@@ -1,0 +1,24 @@
+/* Print: the guide is meant to be archived, printed, handed over.
+   Flatten chrome, force light paper, open every <details>, show link URLs. */
+@media print {
+  :root {
+    --bg: #ffffff; --surface: #ffffff; --surface-2: #f2f0e8;
+    --text: #111111; --text-dim: #444444; --rule: #bbbbbb; --rule-strong: #888888;
+    --accent: #7a5510; --accent-bright: #7a5510; --on-accent: #ffffff;
+    --warn: #8a2a1d; --ok: #2c5230; --info: #2c4666;
+  }
+  .topbar, .skip-link, .filterbar, .ghlink { display: none !important; }
+  .hero { background: none; border-bottom: 2px solid #111; }
+  .status .dot { animation: none; }
+  section { break-inside: avoid-page; margin-block: 1.6rem; }
+  .tg, .box, .profile, .ally { break-inside: avoid; }
+  .tg-install { display: block; }
+  .tg-install > summary { display: none; }
+  .tg-install > * { display: block; }
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-family: var(--mono); font-size: 0.7em; color: #555; word-break: break-all;
+  }
+  a.cite::after { content: ''; }
+  .manifesto { background: #111; color: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

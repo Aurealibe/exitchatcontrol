@@ -1,0 +1,7 @@
+# Netlify/Cloudflare Pages security headers (no CSP here: the SSG hydration
+# payload is an inline script; adding CSP would need per-build hashes).
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()

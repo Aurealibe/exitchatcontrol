@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@import './styles/tokens.css';
+@import './styles/print.css';
+
+/* Map the dossier tokens onto Tailwind v4 utilities (bg-bg · bg-surface ·
+   text-text · text-dim · border-rule · text-accent …). `inline` = the utility
+   reads the live var() at runtime, so theme switches keep working. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-text: var(--text);
+  --color-dim: var(--text-dim);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-accent: var(--accent);
+  --color-accent-bright: var(--accent-bright);
+  --color-on-accent: var(--on-accent);
+  --color-warn: var(--warn);
+  --color-ok: var(--ok);
+  --color-info: var(--info);
+
+  --font-mono: var(--mono);
+  --font-serif: var(--serif);
+  --font-sans: var(--sans);
+}

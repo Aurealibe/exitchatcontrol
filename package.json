@@ -1,0 +1,46 @@
+{
+  "name": "exitchatcontrol",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Devenir Ingouvernable — bilingual (FR/EN) field manual to escape Chat Control and reclaim digital sovereignty. Vite + React 19 + Tailwind v4, static prerendered output, zero tracker, zero CDN.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && node scripts/postbuild-offline.mjs",
+    "preview": "vite preview",
+    "check": "tsc --noEmit -p tsconfig.app.json",
+    "lint": "eslint src --max-warnings 0",
+    "test": "vitest run",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router": "^7.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@unhead/react": "3.1.4",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "simple-icons": "^15.0.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12",
+    "vite-plugin-react-ssg": "0.2.0",
+    "vitest": "^2.1.9"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=22"
+  }
+}
