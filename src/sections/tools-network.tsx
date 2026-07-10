@@ -442,6 +442,14 @@ export function Vpn() {
       {VPNS.map((t) => (
         <ToolCard key={t.id} {...t} />
       ))}
+      <Box label={<T fr="Comparer avant de choisir" en="Compare before you pick" />}>
+        <p>
+          <T
+            fr={<>Le marché du VPN déborde de fausses promesses — comparez toujours juridiction, audits et politique no-log avant de payer. En français, <a href="https://vpn-gratuit.fr/" target="_blank" rel="noopener">vpn-gratuit.fr</a> compare les offres gratuites sérieuses (et leurs limites) : utile pour débuter sans carte bancaire avant de passer à un Mullvad. Rappel : un VPN gratuit qui vit de la publicité vend vos données — préférez les offres gratuites d'acteurs audités (Proton) ou payez en cash/Monero.</>}
+            en={<>The VPN market overflows with false promises — always compare jurisdiction, audits and no-log policy before paying. In French, <a href="https://vpn-gratuit.fr/" target="_blank" rel="noopener">vpn-gratuit.fr</a> compares the serious free tiers (and their limits): useful to start without a bank card before moving to a Mullvad. Reminder: a free VPN living off ads sells your data — prefer free tiers from audited providers (Proton) or pay cash/Monero.</>}
+          />
+        </p>
+      </Box>
     </section>
   )
 }

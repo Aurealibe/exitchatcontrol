@@ -47,6 +47,8 @@ export type DirEntry = {
   /** what it replaces / one-line role — bilingual */
   fr: string
   en: string
+  /** guide's pick — rendered as an expanded, accent-bordered card */
+  featured?: { fr: string; en: string }
 }
 
 export const DIRECTORY: DirEntry[] = [
@@ -112,7 +114,18 @@ export const DIRECTORY: DirEntry[] = [
   { name: 'vLLM', cat: 'ia-locale-agentique', license: 'Apache-2.0', href: 'https://github.com/vllm-project/vllm', fr: 'Inférence haute performance à auto-héberger.', en: 'High-throughput inference to self-host.' },
   { name: 'Jan', cat: 'ia-locale-agentique', license: 'AGPL-3.0', href: 'https://jan.ai', fr: 'ChatGPT-like 100 % local, interface simple.', en: '100% local ChatGPT-like, simple UI.' },
   { name: 'GPT4All', cat: 'ia-locale-agentique', license: 'MIT', href: 'https://gpt4all.io', fr: 'LLM locaux orientés vie privée, sur CPU.', en: 'Privacy-minded local LLMs, CPU-friendly.' },
-  { name: 'Nika', cat: 'ia-locale-agentique', license: 'AGPL-3.0', href: 'https://nika.sh', fr: 'Workflows IA en un binaire : le plan est un fichier relu AVANT exécution, permissions imposées, chaque run rejouable — modèles locaux (Ollama) ou cloud.', en: 'AI workflows in one binary: the plan is a file you review BEFORE it runs, permissions enforced, every run replayable — local models (Ollama) or cloud.' },
+  {
+    name: 'Nika',
+    cat: 'ia-locale-agentique',
+    license: 'AGPL-3.0',
+    href: 'https://nika.sh',
+    fr: 'Workflows IA en un binaire : le plan est un fichier relu AVANT exécution, permissions imposées, chaque run rejouable — modèles locaux (Ollama) ou cloud.',
+    en: 'AI workflows in one binary: the plan is a file you review BEFORE it runs, permissions enforced, every run replayable — local models (Ollama) or cloud.',
+    featured: {
+      fr: 'La doctrine de ce guide, appliquée aux agents IA : ne pas faire confiance, vérifier. Avec Nika, l’agent n’exécute pas ce qu’il « pense » — il propose un plan, un fichier que VOUS relisez avant le run ; les permissions (fichiers, réseau, coût) sont imposées par le moteur, pas promises ; chaque exécution laisse une trace rejouable. Un seul binaire, AGPL, modèles locaux via Ollama ou cloud au choix.',
+      en: 'This guide’s doctrine, applied to AI agents: don’t trust, verify. With Nika the agent doesn’t run what it “thinks” — it proposes a plan, a file YOU review before the run; permissions (files, network, cost) are enforced by the engine, not promised; every run leaves a replayable trace. One binary, AGPL, local models via Ollama or any cloud.',
+    },
+  },
   { name: 'goose', cat: 'ia-locale-agentique', license: 'Apache-2.0', href: 'https://github.com/block/goose', fr: 'Agent de développement extensible (MCP).', en: 'Extensible engineering agent (MCP).' },
   { name: 'OpenHands', cat: 'ia-locale-agentique', license: 'MIT', href: 'https://github.com/All-Hands-AI/OpenHands', fr: 'Agent développeur autonome auto-hébergeable.', en: 'Self-hostable autonomous dev agent.' },
   { name: 'Aider', cat: 'ia-locale-agentique', license: 'Apache-2.0', href: 'https://aider.chat', fr: 'Pair-programming IA dans le terminal, modèle au choix.', en: 'AI pair-programming in the terminal, any model.' },

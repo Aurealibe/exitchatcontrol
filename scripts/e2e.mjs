@@ -47,6 +47,23 @@ check('share row prerendered', html.includes('share-native') && html.includes('s
 check('back-to-top prerendered', html.includes('class="to-top"'))
 check('timeline events deep-linkable', html.includes('id="tl-2020-02-11"') && html.includes('id="tl-1993"'))
 check('section § anchors', html.includes('sec-anchor'))
+check('reading progress bar prerendered', html.includes('class="progress"'))
+check('nika featured card (guide’s pick) prerendered', html.includes('dir-featured') && html.includes('nika.sh'))
+{
+  /* SEO backlinks must be FOLLOW: rel carries noopener only. A later refactor
+     sweeping rel="noopener noreferrer" everywhere would silently kill them. */
+  const followTargets = ['https://vpn-gratuit.fr/', 'https://nika.sh']
+  const bad = []
+  for (const t of followTargets) {
+    const anchors = [...html.matchAll(new RegExp(`<a [^>]*href="${t.replaceAll('/', '\\/')}"[^>]*>`, 'g'))].map((m) => m[0])
+    if (anchors.length === 0) bad.push(`${t}: absent`)
+    for (const a of anchors) {
+      if (/nofollow|noreferrer/.test(a)) bad.push(`${t}: ${a.slice(0, 80)}`)
+    }
+  }
+  check('follow backlinks intact (nika.sh + vpn-gratuit.fr, no nofollow/noreferrer)', bad.length === 0, bad.join(' | '))
+}
+check('agentic-AI pointer in AI section', html.includes('dir-ia-locale-agentique'))
 check('observatory events prerendered', (html.match(/bb-item/g) ?? []).length >= 30, `${(html.match(/bb-item/g) ?? []).length}`)
 check('observatory deep-linkable', html.includes('id="bb-going-dark"') && html.includes('id="bb-pega-kouloglou"'))
 check('observatory counter-wave cites Tapestry', html.includes('https://thealliance.ai/projects/tapestry'))

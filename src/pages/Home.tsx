@@ -20,6 +20,9 @@ export default function Home() {
       <a className="skip-link" href="#menace">
         <T fr="Aller au contenu" en="Skip to content" />
       </a>
+      {/* reading progress — pure CSS scroll-driven (hidden when unsupported
+          or reduced-motion; see tokens.css) */}
+      <div className="progress" aria-hidden="true"></div>
       <TopBar />
       <noscript>
         <div className="status">

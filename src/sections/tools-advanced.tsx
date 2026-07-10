@@ -624,17 +624,33 @@ export function Ecosystem() {
               <T fr={cat.fr} en={cat.en} />
             </h3>
             <div className="allies dir-grid">
-              {entries.map((e) => (
-                <a key={e.name} className="ally" href={e.href} target="_blank" rel="noopener noreferrer">
-                  <span className="ally-name">
-                    {e.name} <span className="lic">{e.license}</span>
-                  </span>
-                  <span className="ally-role">
-                    <T fr={e.fr} en={e.en} />
-                  </span>
-                  <span className="ally-url">{e.href.replace(/^https:\/\//, '').replace(/\/$/, '')} →</span>
-                </a>
-              ))}
+              {entries.map((e) =>
+                e.featured ? (
+                  /* guide's pick — expanded card, follow link (we vouch for it) */
+                  <a key={e.name} className="ally dir-featured" href={e.href} target="_blank" rel="noopener">
+                    <span className="dir-pick">
+                      ★ <T fr="Sélection du guide" en="Guide’s pick" />
+                    </span>
+                    <span className="ally-name">
+                      {e.name} <span className="lic">{e.license}</span>
+                    </span>
+                    <span className="ally-role">
+                      <T fr={e.featured.fr} en={e.featured.en} />
+                    </span>
+                    <span className="ally-url">{e.href.replace(/^https:\/\//, '').replace(/\/$/, '')} →</span>
+                  </a>
+                ) : (
+                  <a key={e.name} className="ally" href={e.href} target="_blank" rel="noopener noreferrer">
+                    <span className="ally-name">
+                      {e.name} <span className="lic">{e.license}</span>
+                    </span>
+                    <span className="ally-role">
+                      <T fr={e.fr} en={e.en} />
+                    </span>
+                    <span className="ally-url">{e.href.replace(/^https:\/\//, '').replace(/\/$/, '')} →</span>
+                  </a>
+                ),
+              )}
             </div>
           </div>
         )

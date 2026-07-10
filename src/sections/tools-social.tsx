@@ -640,6 +640,14 @@ export function Ai() {
           />
         </p>
       </Box>
+      <Box tone="ok" label={<T fr="L'étape d'après : les agents" en="The next step: agents" />}>
+        <p>
+          <T
+            fr={<>Le chatbot local règle la confidentialité de vos <em>questions</em> ; l'étape suivante, ce sont les <strong>agents</strong> — des IA qui agissent (fichiers, terminal, réseau). Là, le principe de ce guide s'applique au carré : ne pas faire confiance, <strong>vérifier avant d'exécuter</strong>. C'est exactement le modèle de <a href="https://nika.sh" target="_blank" rel="noopener"><strong>Nika</strong></a> (AGPL, un binaire) : l'agent propose un <em>plan</em> que vous relisez avant le run, ses permissions sont imposées par le moteur, chaque exécution est rejouable — et il tourne sur vos modèles locaux via Ollama. Les alternatives libres (goose, OpenHands, Aider) sont dans <a href="#dir-ia-locale-agentique">l'annuaire</a>.</>}
+            en={<>A local chatbot fixes the privacy of your <em>questions</em>; the next step is <strong>agents</strong> — AI that acts (files, terminal, network). There, this guide's principle applies squared: don't trust, <strong>review before it runs</strong>. That is exactly <a href="https://nika.sh" target="_blank" rel="noopener"><strong>Nika</strong></a>'s model (AGPL, one binary): the agent proposes a <em>plan</em> you review before the run, its permissions are enforced by the engine, every execution is replayable — and it runs on your local models via Ollama. Free alternatives (goose, OpenHands, Aider) sit in <a href="#dir-ia-locale-agentique">the directory</a>.</>}
+          />
+        </p>
+      </Box>
     </section>
   )
 }

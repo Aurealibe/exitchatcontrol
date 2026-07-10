@@ -617,3 +617,86 @@ footer small { color: var(--text-dim); font-family: var(--mono); font-size: 0.72
   .toc ol { columns: 2; }
   footer .cols { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* ═══ wow pass · scroll-driven + one-shot micro-theatre ═══════════════════════
+   Rules of the house: compositor props only (transform/opacity), everything
+   inside @supports (animation-timeline) or @media (prefers-reduced-motion:
+   no-preference), fallback = fully visible static page. Zero JS. */
+
+/* ① reading progress — the file fills as you read it */
+.progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 60;
+  background: var(--accent); transform-origin: 0 50%; transform: scaleX(0);
+  pointer-events: none;
+}
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .progress { animation: progress-grow linear both; animation-timeline: scroll(); }
+  }
+}
+@keyframes progress-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@supports not (animation-timeline: scroll()) { .progress { display: none; } }
+@media (prefers-reduced-motion: reduce) { .progress { display: none; } }
+@media print { .progress { display: none; } }
+
+/* ② the stamp actually STAMPS — one-shot on load, then a lazy hover tilt */
+@media (prefers-reduced-motion: no-preference) {
+  .stamp {
+    animation: stamp-hit 0.5s cubic-bezier(0.16, 1.2, 0.3, 1) 0.15s backwards;
+  }
+  @keyframes stamp-hit {
+    0% { transform: rotate(-14deg) scale(2.4); opacity: 0; }
+    62% { transform: rotate(-2deg) scale(0.96); opacity: 1; }
+    100% { transform: rotate(-3deg) scale(1); opacity: 0.9; }
+  }
+  .stamp:hover { transform: rotate(-1deg) scale(1.04); transition: transform 0.15s ease-out; }
+}
+
+/* ③ cards rise into view — entry-scoped view() timeline, once */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .tg, .ally, .profile, .eco-cat, .bb-card, .swap-col, .box {
+      animation: rise-in ease-out both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 42%;
+    }
+    .tl-item { animation: rise-in ease-out both; animation-timeline: view(); animation-range: entry 0% entry 55%; }
+  }
+}
+@keyframes rise-in {
+  from { opacity: 0.001; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ④ living timeline — dots swell on hover/:target (halo stays subtle) */
+.tl-item::before { transition: transform 0.15s ease-out, box-shadow 0.15s ease-out; }
+.tl-item:hover::before, .tl-item:target::before {
+  transform: scale(1.5);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--tlc, var(--accent)) 18%, transparent);
+}
+@media (prefers-reduced-motion: reduce) { .tl-item::before { transition: none; } }
+
+/* ⑤ unified card micro-life — lift + accent edge (compositor + border paint) */
+@media (prefers-reduced-motion: no-preference) {
+  .tg, .ally, .profile, .bb-card, .eco-cat { transition: transform 0.16s ease-out, border-color 0.16s ease-out; }
+  .tg:hover, .ally:hover, .profile:hover, .eco-cat:hover { transform: translateY(-2px); }
+  .tg:hover, .profile:hover, .eco-cat:hover { border-color: var(--rule-strong); }
+}
+
+/* ⑥ guide's pick — the ONE expanded card (featured directory entry) */
+.dir-featured {
+  grid-column: 1 / -1;
+  border: 1px solid var(--accent);
+  border-left-width: 4px;
+  background:
+    radial-gradient(130% 120% at 100% 0%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 55%),
+    var(--surface);
+}
+.dir-featured .ally-name { font-size: 1.05rem; }
+.dir-featured .ally-role { font-size: 0.93rem; margin-top: 0.4rem; }
+.dir-pick {
+  display: inline-block; font-family: var(--mono); font-size: 0.6rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-accent);
+  background: var(--accent); border-radius: 2px; padding: 0.18rem 0.5rem; margin-bottom: 0.5rem;
+}
+.dir-featured:hover { border-color: var(--accent-bright); }
