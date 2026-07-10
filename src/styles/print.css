@@ -22,4 +22,11 @@
   }
   a.cite::after { content: ''; }
   .manifesto { background: #111; color: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  /* the printed dossier names its source on the last sheet */
+  footer::after {
+    content: 'exitchatcontrol.org — dossier imprimé · printed dossier';
+    display: block; margin-top: 1.2rem; padding-top: 0.6rem;
+    border-top: 1px solid #888;
+    font-family: var(--mono); font-size: 0.72rem; color: #555;
+  }
 }

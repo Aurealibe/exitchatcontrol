@@ -62,3 +62,16 @@
   même bouton pause explicite (hover/focus/offscreen ne couvrent pas 2.2.2
   au tactile).** Gates locaux build/e2e SKIPPÉS exprès (elle sert dist/ sur
   ses previews 4544/4600) — CI valide mon commit sur l'arbre commité.
+- quick-win inter-itérations (opérateur) — **lane E partielle : pause WCAG
+  2.2.2 du FIL livrée** (toggle React+CSS absorbé par le commit polish sœur
+  `e6a5712` — vérifié par grep dans HEAD · miroir vanilla offline `c5c8622`) ·
+  CI verte.
+- it.2 (03:1x-03:2x) — la sœur a **mergé l'upstream** `7d2aa6d` (rebrand
+  « Exit Chat Control » + traduction NL communautaire @thomasboom + README
+  Contributing) · CI du merge VERTE · audit cohérence rebrand : prefs/e2e/
+  title/hero OK, OG jugée juste (marque au footer, pas de churn) · **lane D
+  exécutée** : 2e note datée dans article-presse.md (l'observatoire entre
+  dans la pièce de presse) `bd5e3ed` · JSON-LD dateModified déjà 10-07 ✓.
+  Sœurs : tree clean mais previews toujours up + arcs récents ≤15 min →
+  PAS encore éteintes, phase F différée. Lanes restantes : B (prose),
+  C (perf/poids), E-solde (axe re-run + offline file:// re-test).

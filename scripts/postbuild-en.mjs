@@ -42,7 +42,7 @@ const swaps = [
   [/(<meta name="twitter:title" content=")[^"]*(")/, `$1${TITLE_EN}$2`],
   [/(<meta name="twitter:description" content=")[^"]*(")/, '$1Private-message scanning is now allowed in the EU. Here is how to take back control, step by step.$2'],
   // structured data: this page is the English article
-  [/("headline": ")[^"]*(")/, '$1Becoming Ungovernable: escape Chat Control$2'],
+  [/("headline": ")[^"]*(")/, '$1Exit Chat Control: becoming ungovernable$2'],
   [/("description": ")[^"]*(")/, `$1${DESC_EN}$2`],
   [/("inLanguage": ")fr(")/, '$1en$2'],
 ]

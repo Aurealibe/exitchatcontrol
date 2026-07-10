@@ -49,6 +49,8 @@ check('timeline events deep-linkable', html.includes('id="tl-2020-02-11"') && ht
 check('section § anchors', html.includes('sec-anchor'))
 check('reading progress bar prerendered', html.includes('class="progress"'))
 check('dossier frame prerendered', html.includes('class="frame"'))
+check('rebrand complete (old title absent from dist)', !html.includes('Devenir Ingouvernable —') && html.includes('Exit Chat Control'))
+check('T leaves carry lang attributes (WCAG 3.1.2)', html.includes('data-l="en" lang="en"') && html.includes('data-l="fr" lang="fr"'))
 check('nika featured card (guide’s pick) prerendered', html.includes('dir-featured') && html.includes('nika.sh'))
 {
   /* SEO backlinks must be FOLLOW: rel carries noopener only. A later refactor
