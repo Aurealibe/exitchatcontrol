@@ -1,0 +1,44 @@
+{
+  "do-signal": {
+    "body": "**Installiere Signal** und überzeuge deine drei wichtigsten Kontakte, ebenfalls zu wechseln."
+  },
+  "do-email": {
+    "body": "**Eröffne ein Konto bei Proton Mail oder Tuta**, importiere deine E-Mails und richte die Weiterleitung von Gmail ein."
+  },
+  "do-pass": {
+    "body": "**Installiere Bitwarden** und verwende eine lange Passphrase als Master-Passwort."
+  },
+  "do-ublock": {
+    "body": "**Füge uBlock Origin** zu deinem Browser hinzu (dauert zehn Sekunden)."
+  },
+  "do-browser": {
+    "body": "**Ersetze Chrome und die Google-Suche** (durch Firefox/Brave + DuckDuckGo)."
+  },
+  "do-twofa": {
+    "body": "**Aktiviere 2FA** (Aegis/Ente Auth, niemals SMS) für E-Mail und Passwortmanager."
+  },
+  "do-cloud": {
+    "body": "**Verschiebe deine Dateien** in einen verschlüsselten Cloud-Speicher (Proton Drive / Cryptomator)."
+  },
+  "do-vpn": {
+    "body": "**Besorge dir ein VPN** (Mullvad), idealerweise anonym bezahlt."
+  },
+  "do-dns": {
+    "body": "**Verschlüssele dein DNS** (Quad9 / Mullvad DNS) auf Smartphone und Computer."
+  },
+  "do-social": {
+    "body": "**Eröffne ein Mastodon-Konto** und schaffe dir eine Präsenz außerhalb der großen Plattformen."
+  },
+  "do-linux": {
+    "body": "**Probiere Linux aus** (distrosea.com) und installiere es anschließend (zum Einstieg Mint)."
+  },
+  "do-graphene": {
+    "body": "**Wechsle auf deinem Smartphone zu GrapheneOS** (Pixel erforderlich) oder härte Android."
+  },
+  "do-selfhost": {
+    "body": "**Hoste deinen ersten Dienst selbst** (YunoHost / Umbrel + Tailscale)."
+  },
+  "do-opsec": {
+    "body": "**Halte dich konsequent an OPSEC-Grundsätze**, wenn du pseudonym veröffentlichst."
+  }
+}

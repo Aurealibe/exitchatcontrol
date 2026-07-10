@@ -1,0 +1,50 @@
+{
+  "fight-chat-control": {
+    "role": "Von Bürgern betriebene Plattform eines anonymen Kollektivs: Kontaktwerkzeug für Europaabgeordnete, Positionen der einzelnen Mitgliedstaaten und Vergleich von Chatkontrolle 1.0 und 2.0. Wird zu jeder Abstimmung neu aktiviert."
+  },
+  "stop-scanning-me": {
+    "role": "Koalition aus mehr als 60 Organisationen: Petition mit über 200.000 Unterschriften, ein offener Brief, dessen Unterstützerkreis von 300 auf 450 Forschende anwuchs, und ein gemeinsamer Brief von 133 NGOs."
+  },
+  "patrick-breyer": {
+    "role": "Ehemaliger Europaabgeordneter der Piratenpartei, der den Begriff „Chatkontrolle“ geprägt hat. Seine Chronik des Vorhabens dokumentiert seit 2020 jede Abstimmung und jedes Dokument."
+  },
+  "edri": {
+    "role": "Das europäische Netzwerk für digitale Rechte (über 50 NGOs). Rechtliche Analyse, Interessenvertretung in Brüssel, Kampagnenkoordination."
+  },
+  "la-quadrature-du-net": {
+    "role": "Seit 2008 aktiv: Verfahren vor dem EuGH (Urteil zur Vorratsdatenspeicherung 2020), die Technopolice-Kampagne und Analysen französischer Überwachungsgesetze."
+  },
+  "noyb": {
+    "role": "Die NGO von Max Schrems führt systematisch Verfahren zur Durchsetzung der DSGVO und brachte zwei Abkommen zur Datenübermittlung zwischen der EU und den USA zu Fall (Schrems I und II)."
+  },
+  "eff": {
+    "role": "Dreißig Jahre Gerichtsverfahren und Werkzeuge (Jewel v. NSA, Certbot, Privacy Badger, Rayhunter) sowie der Leitfaden „Surveillance Self-Defense“."
+  },
+  "signal-foundation": {
+    "role": "Kündigte an, die EU eher zu verlassen, als Scanmechanismen einzubauen. Meta/WhatsApp (Oktober 2025) und Threema („alle Optionen“) schlossen sich dem Widerstand an."
+  },
+  "eff-nsa-timeline": {
+    "role": "Chronologie der US-Überwachung von 1791 bis 2015, gestützt auf die Beweisaufnahme in Jewel v. NSA: Jeder Eintrag ist datiert und mit Quellen belegt. Diese Belegsammlung dient unserem Abschnitt „Präzedenzfälle“ als Vorbild."
+  },
+  "atlas-of-surveillance": {
+    "role": "Mehr als 14.900 dokumentierte Einsätze von Überwachungstechnologie durch Polizeibehörden in über 6.000 US-Gerichtsbezirken (Drohnen, Gesichtserkennung, IMSI-Catcher …), zusammengetragen von über 1.000 Studierenden und Freiwilligen. Geografisch statt chronologisch geordnet."
+  },
+  "technopolice": {
+    "role": "Die 2019 gestartete Kampagne von La Quadrature dokumentiert die „sichere Stadt“ – Stadt für Stadt, Unternehmen für Unternehmen: Vergabeunterlagen, ein Mitmachforum und ein Kanal für Leaks."
+  },
+  "ooni": {
+    "role": "Der größte offene Datensatz zur Internetzensur: Millionen Messungen seit 2012, über 200 Länder, CC-lizenzierte Daten und eine öffentliche API. Zensur, in Echtzeit bewiesen."
+  },
+  "digital-violence": {
+    "role": "Interaktive Karte des Pegasus-/NSO-Ökosystems: Exportlizenzen, Infektionen und die realen Folgen für die Betroffenen."
+  },
+  "surveillance-watch": {
+    "role": "Interaktive Karte der Spyware-Branche: Wer baut, wer finanziert, wer kauft."
+  },
+  "netblocks": {
+    "role": "Echtzeit-Beobachtungsstelle für Internetabschaltungen und -blockierungen, Land für Land, Vorfall für Vorfall."
+  },
+  "big-brother-awards": {
+    "role": "Seit 2000 jährlich vergebener Negativpreis für die schlimmsten Datenschutzverletzer, mit Ausgaben in mehreren Ländern: eine Jahr für Jahr fortgeschriebene Chronik konkreter Fälle."
+  }
+}

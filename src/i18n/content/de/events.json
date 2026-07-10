@@ -1,0 +1,94 @@
+{
+  "clipper-chip": {
+    "title": "Der Clipper-Chip",
+    "body": "Die NSA wirbt für einen Verschlüsselungschip mit einem staatlich verwahrten Zweitschlüssel – „für Strafverfolgungszwecke, nur mit richterlicher Anordnung“. Nachdem Schwachstellen nachgewiesen werden ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)) und sich massiver Widerstand formiert, wird das Vorhaben 1996 aufgegeben. Der erste Kryptokrieg folgt demselben Drehbuch wie heute."
+  },
+  "echelon": {
+    "title": "ECHELON vom Europäischen Parlament bestätigt",
+    "body": "Sechs Tage vor dem 11. September verabschiedet das Europäische Parlament im Plenum (367–159–39) den Bericht seines nichtständigen Ausschusses (am 3. Juli im Ausschuss angenommen), in dem die Existenz eines globalen Netzwerks zum Abfangen privater und kommerzieller Kommunikation bestätigt wird (USA, Vereinigtes Königreich, Kanada, Australien, Neuseeland)."
+  },
+  "nsa-warrantless": {
+    "title": "23 Tage nach dem 11. September",
+    "body": "Eine geheime Anordnung des Präsidenten startet die anlasslose Inlandsüberwachung der NSA ohne richterliche Genehmigung. Die Krise schafft das Programm; das Programm überdauert die Krise. Am 26. Oktober folgt der Patriot Act, ebenfalls „vorübergehend“: Seine Verfallsklauseln werden um 14 Jahre verlängert."
+  },
+  "room-641a": {
+    "title": "Raum 641A",
+    "body": "AT&T-Techniker Mark Klein überreicht EFF die Dokumente, die den geheimen Raum der NSA im Vermittlungszentrum von San Francisco beschreiben: Abhörung auf Infrastrukturebene, für den gesamten Datenverkehr, nicht für Verdächtige."
+  },
+  "retention-directive": {
+    "title": "EU-Richtlinie zur Vorratsdatenspeicherung",
+    "body": "Die EU schreibt die Aufbewahrung der Telekommunikationsmetadaten der gesamten Bevölkerung (6–24 Monate) vor, „um schwere Kriminalität zu verhindern“. Niemand ist verdächtig, jeder ist aktenkundig. Der genaue Bauplan von Chatkontrolle, zwanzig Jahre zuvor."
+  },
+  "snowden": {
+    "title": "Snowden: „Alles einsammeln“",
+    "body": "Der Guardian veröffentlicht zunächst die geheime FISA-Anordnung, die Verizon zur Herausgabe der Metadaten sämtlicher Kunden zwingt, und anschließend PRISM. Im März hatte der Direktor der nationalen Nachrichtendienste, James Clapper, vor dem Kongress das Gegenteil behauptet; wenige Tage nach dem Leak nennt er dies die [„am wenigsten unwahre“ Antwort](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html), die er habe geben können."
+  },
+  "digital-rights-ireland": {
+    "title": "Der EuGH kippt die pauschale Vorratsdatenspeicherung",
+    "body": "Digital Rights Ireland (verbundene Rechtssachen C-293/12 und C-594/12): Die Richtlinie von 2006 wird vollständig aufgehoben: Die wahllose Überwachung der gesamten Bevölkerung verstößt gegen die Charta der Grundrechte. Eine kleine ehrenamtliche NGO hat eine EU-Richtlinie zunichte gemacht."
+  },
+  "snoopers-charter": {
+    "title": "Die britische „Snooper’s Charter“",
+    "body": "Der Investigatory Powers Act legalisiert die massenhafte Datenerhebung und staatliches Hacking und zwingt Internetanbieter, den Browserverlauf aller zu speichern. Drei Wochen später bekräftigt der EuGH (Tele2/Watson), dass eine pauschale Vorratsdatenspeicherung rechtswidrig ist; London hält trotzdem daran fest."
+  },
+  "australia-aaa": {
+    "title": "Australien vs. Mathematik",
+    "body": "Mit dem Assistance and Access Act kann der Staat einem Unternehmen heimlich befehlen, seine Produkte zu überarbeiten („Technical Capability Notices“). Kritiker warnen, dass dies die Verschlüsselung praktisch schwächt, auch wenn das Gesetz nominell „systemische Schwächen“ verbietet. Der Premierminister hatte den Ton angegeben: „Die Gesetze Australiens haben Vorrang vor den Gesetzen der Mathematik.“"
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: Der Tresorhersteller behielt die Schlüssel",
+    "body": "Die Washington Post enthüllt (gestützt auf die interne Geschichte der CIA), dass die CIA und der BND seit 1970 im Geheimen die Crypto AG besaßen, den Schweizer Verschlüsselungsanbieter von 120 Regierungen. In den 1980er Jahren kamen 40 % der von der NSA entschlüsselten diplomatischen Depeschen über sie. Moral: Eine „vertrauenswürdige“ Hintertür ist eine Hintertür."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net beim EuGH",
+    "body": "Der Gerichtshof bestätigt das Verbot pauschaler Vorratsdatenspeicherung für Frankreich und Belgien (verbundene Rechtssachen C-511/18, C-512/18 und C-520/18) sowie am selben Tag für das Vereinigte Königreich in der Rechtssache Privacy International (C-623/17), lässt jedoch Ausnahmen für die „nationale Sicherheit“ offen. Die doppelte Lehre: Klagen wirken, und jede Ausnahme droht zur nächsten Regel zu werden. Die Kommission hat dennoch nie ein Vertragsverletzungsverfahren gegen Mitgliedstaaten eingeleitet, die weiterhin Vorratsdaten speichern."
+  },
+  "chatcontrol-1": {
+    "title": "Chatkontrolle 1.0, „vorübergehend“",
+    "body": "Die Verordnung 2021/1232 erlaubt das „freiwillige“ Scannen privater Nachrichten und weicht damit von ePrivacy ab. Sonnenuntergang am 3. August 2024, versprochen. Durch die Verordnung 2024/1307 wird sie bis zum 3. April 2026 verlängert, wo sie ausläuft … und dann von den Toten aufersteht (siehe unten)."
+  },
+  "pegasus-project": {
+    "title": "Das Pegasus-Projekt",
+    "body": "Mehr als 80 Journalisten aus 17 Redaktionen in 10 Ländern dokumentieren die Ausspähung von Journalisten, Anwälten, Dissidenten und Staatsoberhäuptern mit der Spyware von NSO. Die forensische Analyse von Amnesty (von Citizen Lab begutachtet) belegt Zero-Click-Infektionen vollständig aktualisierter iPhones: Wird das Endgerät angegriffen, reicht Verschlüsselung allein nicht aus. Genau darauf beruht auch die Logik des clientseitigen Scannens."
+  },
+  "apple-csam": {
+    "title": "Apple kündigt das Scannen auf dem Gerät an … und macht dann einen Rückzieher",
+    "body": "Apple stellt das Scannen von iPhone-Fotos auf CSAM direkt auf dem Gerät vor. Forschende und NGOs protestieren: Damit entstehe eine Infrastruktur, die sich für allgemeine Überwachung nutzen lasse. Im Dezember 2022 gibt Apple das Vorhaben auf und verweist später in einem [Brief vom August 2023](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection) auf die Gefahr eines „Dammbruchs mit unbeabsichtigten Folgen“. Genau diesen Mechanismus möchte Chatkontrolle 2.0 vorschreiben."
+  },
+  "chatcontrol-2": {
+    "title": "Chatkontrolle 2.0: obligatorisches Scannen",
+    "body": "Die Kommission schlägt die CSAR-Verordnung (COM/2022/209) vor: „Aufdeckungsanordnungen“, die jede Plattform zum Scannen zwingen können – auch Ende-zu-Ende-verschlüsselte Dienste. Aus der Freiwilligkeit von 2021 wird 2022 eine Pflicht: eine Ausweitung des Anwendungsbereichs wie aus dem Lehrbuch."
+  },
+  "osa-spy-clause": {
+    "title": "Online-Sicherheitsgesetz: die „Spionageklausel“",
+    "body": "Das Vereinigte Königreich schafft die Befugnis, Messenger zum Scannen verschlüsselter Inhalte anzuweisen (Abschnitt 121). Die Einschränkung „soweit technisch machbar“ steht nicht im Gesetz; sie stammt lediglich aus einer [Erklärung von Lord Parkinson im Oberhaus](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) vom 6. September 2023, nachdem Signal und WhatsApp mit ihrem Rückzug gedroht hatten. Die Regierung räumt ein, dass die Technik nicht verfügbar ist, lässt die Befugnis aber im Gesetz bestehen."
+  },
+  "first-extension": {
+    "title": "Das „Provisorische“ bekommt seine erste Verlängerung",
+    "body": "Die Verordnung 2024/1307 verschiebt den Ablauf von Chatkontrolle 1.0 vom 3. August 2024 auf den 3. April 2026. Eine Notfallmaßnahme, die sich selbst erneuert, ist keine Ausnahme mehr: Es ist ein Regime."
+  },
+  "uk-age-checks": {
+    "title": "Großbritannien: Zur Nutzung des Internets einen Ausweis vorzeigen",
+    "body": "Der Online Safety Act führt für weite Teile des Webs eine „hochwirksame“ Altersverifikation ein (Ausweis, Kreditkarte, Gesichtsaltersschätzung). Proton misst innerhalb einer Stunde einen Anstieg der VPN-Anmeldungen um [mehr als 1.400 %](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced); das Oberhaus debattiert bereits über Beschränkungen für VPNs."
+  },
+  "council-sunset-delete": {
+    "title": "Der Rat beantragt die Streichung der Verfallsklausel",
+    "body": "Die Trilogposition des Rates (Dok. 15318/25) sieht vor, die Ablaufklausel für das „freiwillige“ Scannen schlicht zu streichen und die Regelung damit dauerhaft zu machen. Der Entwurf der dänischen Ratspräsidentschaft erwog verpflichtendes clientseitiges Scannen. Im Februar 2026 antwortet der EDSB auf den Kommissionsvorschlag vom Dezember, die Ausnahme bis 2028 zu verlängern (COM(2025) 797): eine erhebliche Verschlechterung der Vertraulichkeit; eine unterschiedslose Analyse sei unverhältnismäßig."
+  },
+  "ep-says-no": {
+    "title": "Das Parlament sagt nein",
+    "body": "Das Europäische Parlament lehnt eine Verlängerung des freiwilligen Scannens bis 2028 ab (228 Ja-Stimmen, 311 Nein-Stimmen, 92 Enthaltungen). Konsequenz: Die Rechtsgrundlage läuft am 3. April 2026 aus. Der Druck der Bürger und die Arbeit von NGOs hielten stand. Drei Monate lang."
+  },
+  "scanning-continues": {
+    "title": "Das Gesetz erlischt, das Scannen geht weiter",
+    "body": "Nach Ablauf der Ausnahmeregelung kündigen die Giganten, die den gemeinsamen Appell vom 19. März zur Stärkung des Regimes unterzeichnet haben (Google, Meta, Microsoft, Snap, TikTok), an, dass sie weiterhin Nachrichten scannen werden, ob auf Rechtsgrundlage oder nicht. Das Eingeständnis, dass „Compliance“ eine Kulisse war."
+  },
+  "council-resurrects": {
+    "title": "Der Rat lässt den verfallenen Text wieder aufleben",
+    "body": "Drei Monate nach Ablauf der Frist nimmt der Rat seinen Standpunkt zur Wiedereinführung des freiwilligen Scannens bis zum 3. April 2028 an und übermittelt ihn dem Parlament zur zweiten Lesung. In diesem Verfahren erfordert eine Ablehnung eine absolute Mehrheit (361 von 720) statt lediglich der Mehrheit der abgegebenen Stimmen."
+  },
+  "ep-e2ee-carveout": {
+    "title": "Die Ablehnung scheitert, doch E2EE wird ausgenommen",
+    "body": "Das Dringlichkeitsverfahren wird am 7. Juli angenommen (331/304/11), die Abstimmung folgt am 9. Juli: 314 Abgeordnete stimmen für die Ablehnung des Ratsstandpunkts – eine einfache Mehrheit, aber weniger als die erforderlichen 361. Anschließend nimmt das Parlament jedoch Änderungsanträge an, die Ende-zu-Ende-verschlüsselte Kommunikation vom Scanregime ausnehmen (369 und 362 Stimmen). Auch ein letzter Versuch, die geänderte Position abzulehnen, scheitert (276/286/30). Der geänderte Text geht zurück an den Rat. Dieser hat etwa drei Monate (bis ungefähr 9. Oktober 2026), um die Änderungen anzunehmen – freiwilliges Scannen nicht Ende-zu-Ende-verschlüsselter Dienste bis 3. April 2028 – oder ein Vermittlungsverfahren einzuleiten. Stand 10. Juli 2026 ist nichts in Kraft: Die am 3. April ausgelaufene Ausnahme wurde nie wiederbelebt ([vollständige namentliche Abstimmungen](https://howtheyvote.eu/votes/195775))."
+  }
+}

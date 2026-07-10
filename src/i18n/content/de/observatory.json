@@ -1,0 +1,142 @@
+{
+  "prum-2": {
+    "title": "Prüm II: Gesichtsdurchsuchung bei allen Polizeikräften in Europa",
+    "body": "Mit der Verordnung 2024/982 werden auch Gesichtsbilder – einschließlich der Bilder nie verurteilter Verdächtiger – über einen zentralen Router in den automatisierten Austausch polizeilicher Daten zwischen den Mitgliedstaaten aufgenommen. So entsteht ohne echte nationale Debatte eine europaweite Fähigkeit zur biometrischen Identifizierung; EDRi warnt vor „staatlichen Übergriffen und Massenüberwachung“."
+  },
+  "eidas-wallet": {
+    "title": "eIDAS 2.0: Das Identitäts-Wallet landet, Browser unterliegen staatlichem Vertrauen",
+    "body": "Jeder Mitgliedstaat muss bis zum 24. Dezember 2026 eine europäische digitale Identitäts-Wallet (EUDI-Wallet) bereitstellen; Banken, Telekommunikations- und Gesundheitsdienste sowie sehr große Plattformen müssen sie akzeptieren. Dieselbe Wallet weist dein Alter nach, eröffnet dein Konto und signiert deine Zahlung: ein Zugangstor und damit ein Kontrollpunkt. Der EDSB dokumentiert die Risiken einer Nachverfolgung über verschiedene Nutzungszwecke hinweg. Artikel 45 zwingt Browser zudem, staatlich bestimmte Webzertifikate anzuerkennen. Mehr als 500 Forschende warnten, dies schaffe die Infrastruktur zum Abfangen verschlüsselten Datenverkehrs ([last-chance-for-eidas.org](https://last-chance-for-eidas.org/))."
+  },
+  "going-dark": {
+    "title": "Der „Going Dark“-Plan: Polizeizugang mit Absicht",
+    "body": "Die Hochrangige Gruppe zum „Zugang zu Daten“, die fast ausschließlich aus Vertretern der Strafverfolgungsbehörden besteht, verabschiedet am 21. Mai 2024 insgesamt 42 Empfehlungen: „Lawful Access by Design“ (polizeilicher Zugriff wird von Anfang an in Produkte eingebaut), eine harmonisierte Metadatenspeicherung und die Pflicht, jeden Nutzer zu identifizieren – auch bei Messengern. Im Dezember 2024 bezeichnen 55 zivilgesellschaftliche Organisationen, Unternehmen und Verbände das Ergebnis in einem offenen Brief als [„Scheitern der Mission“](https://edri.org/our-work/high-level-group-going-dark-outcome-a-mission-failure/): eine Blaupause für Massenüberwachung. Es ist die Grundlage für alles, was folgt."
+  },
+  "roumanie-tiktok": {
+    "title": "Rumänien: Wahl annulliert, die DSA schlichtet das Sichtbare",
+    "body": "Am 6. Dezember annulliert Rumäniens Verfassungsgericht die erste Runde der Präsidentschaftswahl und verweist auf eine nicht offengelegte, koordinierte Kampagne auf TikTok. Am 17. Dezember eröffnet die Kommission ein formelles DSA-Verfahren gegen die Plattform (Empfehlungssysteme, politische Werbung), das 2026 noch läuft. Unabhängig vom Ausgang bleibt der Präzedenzfall: Wer darüber entscheidet, was bei einer Wahl sichtbar ist, wird nun zwischen Plattformen, Kommission und Verfassungsgerichten ausgehandelt."
+  },
+  "vietnam-decret-147": {
+    "title": "Vietnam: verifizierte Identität oder Schweigen",
+    "body": "Das Dekret 147 zwingt Plattformen dazu, die Identität jedes Benutzers (Telefon- oder ID-Nummer) zu überprüfen, die Daten zu speichern und an die Behörden weiterzugeben. Nur verifizierte Konten dürfen Beiträge posten, kommentieren oder streamen. Die Gleichung ist klar formuliert: keine bestätigte Identität, keine öffentliche Rede."
+  },
+  "uk-apple-adp": {
+    "title": "London fordert eine Hintertür, Apple zieht seine Verschlüsselung zurück",
+    "body": "Durch geheime Anordnung (eine Technical Capability Notice gemäß dem Investigatory Powers Act) verlangt das Innenministerium Zugriff auf verschlüsselte iCloud-Daten, mit weltweiter Reichweite, die durch Akten bestätigt wird. Apple reagiert, indem es allen britischen Benutzern den erweiterten Datenschutz (End-to-End-verschlüsselte iCloud) entzieht, anstatt den Schlüssel zu erstellen. Unter dem Druck der USA „zieht“ London die Nachfrage im Sommer zurück … und erlässt dann Anfang September 2025 eine neue Anordnung, die am 1. Oktober bekannt gegeben und auf die Daten britischer Nutzer angepasst wird. Mitte 2026 leben britische Benutzer immer noch ohne E2EE in ihren Backups."
+  },
+  "fr-narcotrafic-8ter": {
+    "title": "Frankreich: Die Narcotrafic-Hintertür fällt",
+    "body": "Artikel 8 ter des Narcotrafic-Gesetzes hätte verschlüsselte Messenger gezwungen, Geheimdiensten Zugang zur Korrespondenz zu gewähren: der „Ghost Participant“-Mechanismus. Im Ausschuss gestrichen, wird seine Wiedereinsetzung in der Nacht des 20. März 2025 von einer parteiübergreifenden Koalition gegen den Willen des Innenministers [mit 119 zu 24 Stimmen abgelehnt](https://lcp.fr/actualites/narcotrafic-l-assemblee-refuse-l-acces-aux-messageries-chiffrees-contre-l-avis-de-bruno). Ein nationales Parlament kann Nein sagen; die Regierung hat jedoch nicht aufgegeben: Die Forderung nach Zugang kehrt regelmäßig zurück – hier und später in Brüssel."
+  },
+  "protecteu": {
+    "title": "„ProtectEU“: Das Brechen der Verschlüsselung wird zur offiziellen Richtlinie",
+    "body": "Die Strategie der Kommission für die innere Sicherheit (COM(2025) 148) kündigt einen Fahrplan für den „rechtmäßigen und wirksamen Zugang zu Daten“, eine „Technologie-Roadmap“ zur Verschlüsselung und einen deutlichen Ausbau von Europol an. Vereinzelte Forderungen der Polizei werden damit zum mehrjährigen politischen Programm der Union: Zugang zu verschlüsselter Kommunikation, nun schriftlich festgehalten."
+  },
+  "ice-palantir": {
+    "title": "ICE kauft „ImmigrationOS“ von Palantir",
+    "body": "30 Millionen Dollar für eine Plattform, die Querverweise zu Bundesdatenbanken bietet und „nahezu Echtzeit-Sichtbarkeit“ über Personen bietet, die abgeschoben werden sollen. Die gezielte Überwachung einer gesamten Bevölkerung wird zu einem serienmäßigen Softwareprodukt, das von einem privaten Unternehmen betrieben wird."
+  },
+  "ch-vupf": {
+    "title": "Sogar die Schweiz: die Verordnung, die Proton vertreiben würde",
+    "body": "Die überarbeitete Überwachungsverordnung (VÜPF) würde Pflichten zur Nutzeridentifizierung und Vorratsdatenspeicherung (sechsmonatige IP-Protokolle) auf jeden Dienst mit mehr als 5.000 Nutzern ausweiten. Der CEO von Proton kündigt an, das Land im Fall einer Verabschiedung zu verlassen („wir wären weniger vertraulich als Google“), und friert Investitionen in der Schweiz ein; auch Threema protestiert. Anfang 2026 stockt das Vorhaben: In der Vernehmlassung herrscht nahezu einhelliger Widerstand, das Parlament fordert eine Neufassung. Der historische Hort der Vertraulichkeit versucht per Verordnung, worüber die EU bei der Chatkontrolle debattiert."
+  },
+  "us-visa-vetting": {
+    "title": "US-Visa: öffentliche Social-Media-Profile oder kein Visum",
+    "body": "Das Außenministerium verlangt von Antragstellern für ein Studentenvisum, dass sie ihre Profile in sozialen Medien auf „öffentlich“ setzen (Depesche vom 18. Juni 2025), und prüft sie auf „Feindseligkeit“ gegenüber den Vereinigten Staaten. Im DS-160-Formular mussten bereits seit 2019 die Social-Media-Kennungen der vergangenen fünf Jahre angegeben werden. Am 15. Dezember wurde die Prüfung auf H-1B-Visa und im März 2026 auf mehr als 14 Visumkategorien ausgeweitet. Die Einreise wurde damit von einer ideologischen Prüfung öffentlicher Online-Äußerungen abhängig: ein weltweiter Anreiz zur Selbstzensur."
+  },
+  "roadmap-lawful-access": {
+    "title": "Der Fahrplan: staatliche Entschlüsselung bis 2030 geplant",
+    "body": "Die Kommission veröffentlicht ihren Zeitplan für den „rechtmäßigen Zugriff auf Daten“ (COM(2025) 349): neue Aufbewahrungsregeln, grenzüberschreitendes Abfangen bis 2027, KI-Analyse der beschlagnahmten Daten bis 2028 und eine „Entschlüsselungsfunktion der nächsten Generation“ für Europol ab 2030. Die EU plant über einen Zeitraum von fünf Jahren die rechtlichen und technischen Bausteine, um zu lesen, was heute unlesbar ist. Die EFF bringt es auf den Punkt: „Diese Roadmap macht alle weniger sicher.“"
+  },
+  "age-blueprint": {
+    "title": "Altersverifizierung: die Pilot-App in fünf Ländern",
+    "body": "Die Kommission veröffentlicht ihre DSA-„Artikel 28“-Richtlinien und einen mit Dänemark, Frankreich, Griechenland, Italien und Spanien erprobten Entwurf zur Altersüberprüfung (ein „Mini-Wallet“), der bis Ende 2026 in das EUDI-Wallet übergehen soll. Selbst unter Wahrung der Privatsphäre installiert die Logik eine Identitätsprüfung am Eingang des Internets: Der Nachweis eines Personenstandsmerkmals zum Anzeigen legaler Inhalte wird zu einer normalen Geste."
+  },
+  "fr-pornhub": {
+    "title": "Frankreich: Der Conseil d’État führt die Alterskontrolle wieder ein",
+    "body": "Gemäß dem SREN-Gesetz und dem Arcom-Rahmenwerk („doppelte Anonymität“) müssen Websites für Erwachsene das Alter der Besucher überprüfen. Aylo (Pornhub) sperrt aus Protest den Zugang aus Frankreich; das Verwaltungsgericht setzt das Dekret im Juni aus, der Conseil d’État hebt diese Aussetzung am 15. Juli wieder auf. Die Verpflichtung bleibt bestehen, die Websites werden erneut gesperrt. Der erste umfassende Einsatz des „Personalausweises für den Internetzugang“, bei dem Sperren als Druckmittel zur Durchsetzung dienen."
+  },
+  "cn-cyber-id": {
+    "title": "China: der nationale Internet-Ausweis, zentralisiert bei der Polizei",
+    "body": "Am 15. Juli 2025 wird die „Cyberspace-ID“ eingeführt: eine einheitliche Kennung, die das Ministerium für öffentliche Sicherheit und die chinesische Cyberspace-Verwaltung gemeinsam ausgeben. Sie stützt sich auf Gesichtserkennung und den nationalen Personalausweis und dient zur Anmeldung bei Online-Diensten. Offiziell ist sie freiwillig und ergänzt die ohnehin bereits verpflichtende Registrierung unter echtem Namen. Zentralisiert der Staat die Online-Identifizierung, verschwindet Anonymität praktisch von selbst und der Internetzugang wird zu einem widerruflichen Privileg. Es ist die fertig ausgebaute Variante dessen, was westliche Altersprüfungen und digitale Wallets erst skizzieren."
+  },
+  "emfa-article-4": {
+    "title": "EMFA: Journalistenschutz, geschwächt durch seine Ausnahmen",
+    "body": "Das Europäische Medienfreiheitsgesetz tritt vollständig in Kraft. Artikel 4 verbietet Spyware gegen Journalisten grundsätzlich, lässt sie dann aber für eine Liste schwerer Straftaten ausnahmsweise zu. Während der Verhandlungen drängte der Rat unter Führung Frankreichs auf eine pauschale Ausnahme für die „nationale Sicherheit“, die RSF scharf kritisierte. Der erste europäische Rechtsakt zum Schutz von Journalisten vor staatlicher Spionage schreibt damit zugleich fest, unter welchen Bedingungen diese Spionage legal bleibt."
+  },
+  "ru-max": {
+    "title": "Russland: der staatliche Messenger, per Dekret vorinstalliert",
+    "body": "Jedes in Russland verkaufte Smartphone muss mit MAX ausgeliefert werden, dem von VK entwickelten und als „nationale App“ bezeichneten Messenger; Beamte und Lehrkräfte werden zur Nutzung verpflichtet. Unabhängige Analysen beschreiben umfassendes Tracking und eine Integration in das Abhörsystem des FSB. Der Endpunkt der Anti-Verschlüsselungslogik: ein für die Dienste mitlesbarer Messenger, der bereits über den Vertrieb der Hardware durchgesetzt wird."
+  },
+  "ru-recherche-punie": {
+    "title": "Russland: Internetsuchen werden zur Straftat",
+    "body": "Die „absichtliche“ Online-Suche nach als „extremistisch“ eingestuften Inhalten (eine Liste mit über 5.000 Einträgen, einschließlich Opposition) wird strafbar (auch über ein VPN), und Tools zur Werbeumgehung sind verboten. Eine historische Schwelle: Der Staat bestraft nicht mehr das, was man sagt, sondern das, was man herauszufinden versucht. Der logische Endpunkt der Überprüfung der individuellen Nutzung."
+  },
+  "scientifiques-csar": {
+    "title": "500 Wissenschaftler: „technisch nicht machbar“",
+    "body": "Mehr als 500 Kryptografen und Forscher aus 34 Ländern (rund 800 aus 37 Ländern bis Oktober) unterzeichnen gegen den dänischen CSAR-Entwurf: Eine zuverlässige Erkennung ist in diesem Umfang unmöglich, eine Umgehung ist für Kriminelle trivial und jeder clientseitiges Scannen „untergräbt“ Ende-zu-Ende-Verschlüsselung „von Natur aus“. Die Daten des Bundeskriminalamtes (BKA) machen das deutlich: Von 205.728 im Jahr 2024 eingegangenen NCMEC-Meldungen waren 99.375 (48,3 %) „nicht strafrechtlich relevant“. Der wissenschaftliche Konsens ist eindeutig. Und das Projekt geht weiter."
+  },
+  "uk-britcard": {
+    "title": "„BritCard“: ein digitaler Ausweis, um arbeiten zu dürfen",
+    "body": "Die Starmer-Regierung kündigt im Namen der Bekämpfung irregulärer Einwanderung eine digitale Identität an („BritCard“ ist ein inoffizieller Spitzname). Bis zum Ende der Legislaturperiode soll sie für die Prüfung des Rechts auf Arbeit verpflichtend werden. Eine Petition erreicht innerhalb von rund zwei Tagen eine Million Unterschriften (inzwischen mehr als 2,9 Millionen); die Regierung hält an ihrem Kurs fest, ein Gesetzentwurf ist in der King’s Speech vom Mai 2026 angekündigt. Wer das Recht auf Arbeit an eine staatliche Kennung bindet, schafft einen zentralen Kontrollpunkt für das Wirtschaftsleben aller Menschen."
+  },
+  "berlin-bloque": {
+    "title": "Berlin blockiert die Scanpflicht",
+    "body": "Signal-Präsidentin Meredith Whittaker erklärt öffentlich, der Messenger werde eher den europäischen Markt verlassen, als seine Verschlüsselung zu untergraben. Die CDU/CSU-Fraktion vergleicht anlassloses Scannen mit dem heimlichen Aufdampfen sämtlicher Briefe. Der Punkt wird von der Tagesordnung des JI-Rates am 14. Oktober gestrichen: Die Sperrminorität hält. Das Kräfteverhältnis kann sich ändern, doch das Projekt verschwindet nie: Als „freiwillig“ umgestaltet, kehrt es sechs Wochen später zurück."
+  },
+  "ees-biometrie": {
+    "title": "EES: Gesicht und Finger werden zum Pass",
+    "body": "Das Einreise-/Ausreisesystem geht in Betrieb: Fingerabdrücke und ein Gesichtsbild jedes Reisenden aus einem Nicht-EU-Staat werden in einer zentralen Datenbank gespeichert und ersetzen den Passstempel (vollständige Einführung am 10. April 2026). Als Nächstes folgt ETIAS, eine kostenpflichtige Reisegenehmigung auf Grundlage dieser Datenbanken. Die EU entwickelt die Grenze zur Datenbank: Der Körper wird zum standardmäßigen Reiseidentifikator, gespeichert in Systemen, die auf Verknüpfung ausgelegt sind."
+  },
+  "onu-cybercrime": {
+    "title": "UN-Konvention gegen Cyberkriminalität: Überwachung per Vertrag exportiert",
+    "body": "Das auf russische Initiative ausgehandelte und Ende 2024 verabschiedete Übereinkommen versammelt in Hanoi 72 Unterzeichner: 71 Staaten plus die EU. EFF und Human Rights Watch warnen: weit gefasste Definitionen, obligatorische gegenseitige Unterstützung bei der Sammlung elektronischer Beweise (einschließlich Echtzeitüberwachung) für „schwere Straftaten“ gemäß der Definition im Recht des ersuchenden Landes, mit optionalen Schutzmaßnahmen. Ein legalisierter weltweiter Kanal, über den die Standards des repressivsten Regimes verbreitet werden können."
+  },
+  "euro-numerique-pilote": {
+    "title": "Digitaler Euro: Die Architektur wird vor den Sicherheitsmaßnahmen erstellt",
+    "body": "Die EZB schließt ihre „Vorbereitungsphase“ ab und startet die nächste: eine Pilotübung Mitte 2027, mögliche erste Emission im Jahr 2029, während die Verordnung noch nicht verabschiedet ist. Die Eurogruppe einigte sich im September auf die Governance und den Prozess zur Festlegung von Halteobergrenzen. Eine digitale Zentralbankwährung ist eine Infrastruktur, in der jede Transaktion nativ protokollierbar ist; es wird gebaut, während seine rechtlichen Grenzen noch ungeschrieben sind."
+  },
+  "au-ban-16": {
+    "title": "Australien: 4,7 Millionen Konten in einem Monat abgeschaltet",
+    "body": "Eine Weltneuheit: Ab dem 10. Dezember 2025 sind unter 16-Jährigen der Zutritt zu den zehn von der eSafety-Regulierungsbehörde benannten Plattformen verboten. Diese müssen ihr Alter schätzen (Verhaltensrückschlüsse, Gesichtsscan-Selfies, Ausweisdokumente), was mit einer Geldstrafe von 49,5 Mio. AUD drohen kann. Mitte Januar 2026 gibt der Premierminister bekannt, dass 4,7 Millionen Konten deaktiviert, entfernt oder eingeschränkt werden. Um Minderjährige auszuschließen, muss man das Alter jedes Einzelnen schätzen: Die Biometrie wird zur Mautstelle des Social Web, und Regierungen auf der ganzen Welt beobachten das Labor."
+  },
+  "fr-vsa-prolongee": {
+    "title": "Algorithmische Videoüberwachung: Das „Experiment“ der Olympischen Spiele geht ins siebte Jahr",
+    "body": "Die algorithmische Videoüberwachung wurde mit dem Olympiagesetz von 2023 „versuchsweise“ genehmigt und sollte im März 2025 auslaufen. Mit Zustimmung des Verfassungsrates wurde sie bis Ende 2027 verlängert. Im Mai 2026 stimmt der Senat bereits über die nächste Fortsetzung ab (das „Ripost“-Gesetz): bis Ende 2030 und ausgeweitet auf alle öffentlich zugänglichen Räume. Der klassische Sperrklinkeneffekt: Die Ausnahme überlebt ihr Ablaufdatum, ihr Anwendungsbereich wächst, die Auswertung kann warten."
+  },
+  "pl-ziobro-asile": {
+    "title": "Pegasus in Polen: Der Angeklagte findet Asyl … innerhalb der EU",
+    "body": "Der ehemalige Justizminister Zbigniew Ziobro, gegen den 26 Anklagen erhoben werden (darunter die Finanzierung von Pegasus aus einem Opferhilfefonds und dessen Einsatz gegen Gegner), sagt, ihm sei nach Aufhebung seiner Immunität politisches Asyl in Ungarn gewährt worden; im Mai 2026 flieht er weiter in die USA. Die gerichtliche Aufarbeitung staatlicher politischer Spionage gerät in eine beispiellose Sackgasse: Ein EU-Mitgliedsstaat beherbergt den mutmaßlichen Täter, und die Rechenschaftspflicht endet an der Binnengrenze."
+  },
+  "ru-whatsapp-bloque": {
+    "title": "Russland: WhatsApp für 100 Millionen Nutzer abgeschaltet",
+    "body": "Der gesamte Ablauf dauert sechs Monate: Im August 2025 werden WhatsApp- und Telegram-Anrufe gedrosselt (die Plattformen „verweigern die Weitergabe von Daten an die Behörden“); im Dezember wird die Drosselung verschärft; im Februar 2026 wird WhatsApp vollständig gesperrt, wie der Kreml bestätigt. Die Methode ist klar: Daten fordern, den ablehnenden Dienst drosseln und ihn schließlich abschalten. Wer sich weigert, die Verschlüsselung zu brechen, wird aus dem Land ausgeschlossen."
+  },
+  "gr-intellexa": {
+    "title": "Raubtier in Griechenland: Die Verkäufer verurteilt, die Käufer unauffindbar",
+    "body": "Ein Athener Gericht verurteilt vier mit Intellexa verbundene Führungskräfte (Gründer Tal Dilian sowie Hamou, Bitzios und Lavranos) wegen illegalen Zugriffs auf private Kommunikation im Predator-Skandal (~87 Ziele: Journalisten, Minister, Militäroffiziere; eine Zahl, die von The Record und ICIJ gemeldet wurde). Die erste strafrechtliche Verurteilung von Spyware-Händlern in der EU. Doch kein politischer Beamter wird verurteilt: Wer die Abhörmaßnahmen angeordnet hat, bleibt offiziell unauffindbar."
+  },
+  "fr-boites-noires-urls": {
+    "title": "Black Boxes: Geheimdienste wollen die vollständigen URLs",
+    "body": "Die Abgeordneten weiten die „Black Boxes“ – eine 2015 zur Terrorismusbekämpfung eingeführte und seitdem verstetigte algorithmische Metadatenanalyse – auf organisierte Kriminalität und erstmals auf die vollständigen URLs besuchter Seiten aus. Der Verfassungsrat lehnte 2025 einen ähnlichen Plan ab; die Regierung versucht es in angepasster Form erneut. Eine vollständige URL verrät nicht nur, mit wem du kommunizierst, sondern auch, was du liest: ein qualitativer Sprung hin zur automatisierten Kontrolle von Lesegewohnheiten mit behördlicher statt richterlicher Genehmigung."
+  },
+  "palantir-europe": {
+    "title": "Palantir in Europa: Der Anbieter wechselt, die Frage nicht",
+    "body": "Mitte Mai 2026 lässt der deutsche Inlandsgeheimdienst (BfV) Palantir zugunsten der französischen ChapsVision fallen. Die französische DGSI (die ihren Palantir-Vertrag im November 2025 bis 2028 verlängert hatte) geht später denselben Weg: Am 16. Juni 2026 kündigt Sébastien Lecornu eine Migration zu ChapsVision im Laufe des Jahres 2027 an. Unterdessen nutzt die Polizei in Bayern und Hessen weiterhin Gotham (Nordrhein-Westfalen bis Oktober 2026), was vor dem Verfassungsgericht angefochten wurde. Die öffentliche Debatte ist von „Sollten Polizeiakten durch KI zusammengeführt werden“ zu „Welcher Anbieter sollte das tun“ abgerutscht: Souveränität ist an die Stelle der Verhältnismäßigkeit getreten, und die Massenanalyse selbst wird nicht mehr in Frage gestellt."
+  },
+  "us-fisa-702": {
+    "title": "FISA 702 erlischt, die Erhebung wird trotzdem fortgesetzt",
+    "body": "Section 702, die das Erfassen von Kommunikation über US-Anbieter ohne richterlichen Beschluss erlaubt, sollte im April 2026 auslaufen. Nach zwei kurzen Verlängerungen endet die Befugnis Mitte Juni, während der Kongress über die Forderung nach einem richterlichen Beschluss für FBI-Abfragen zu US-Personen feststeckt. Bestehende Genehmigungen bleiben jedoch bis März 2027 gültig: Das System läuft ohne erneuerte Rechtsgrundlage ein weiteres Jahr weiter. Eine „vorübergehende“ Überwachungsbefugnis schaltet sich nie vollständig ab."
+  },
+  "euro-numerique-econ": {
+    "title": "Digitaler Euro: „nicht programmierbar“, dennoch bedingt",
+    "body": "Der ECON-Ausschuss des Parlaments nimmt seinen Standpunkt an (43 zu 14 Stimmen, eine Enthaltung): Die Weichen für eine Einführung bis 2029 sind gestellt. Die EZB versichert in ihren FAQ, der digitale Euro werde „kein programmierbares Geld sein“, während sie „bedingte Zahlungen“ als optionale Dienste darstellt. Nach dem Standpunkt der Abgeordneten würde die Kommission die Obergrenze für Guthaben später auf Empfehlung der EZB festlegen und alle zwei Jahre überprüfen. Die Lücke zwischen Versprechen und technischer Plattform beruht auf einer politischen Entscheidung, nicht auf technischer Unmöglichkeit: Die Infrastruktur für Bedingungen und Rückverfolgbarkeit bestünde vom ersten Tag an."
+  },
+  "europol-reforme": {
+    "title": "Europol: Budget auf 3 Milliarden Euro erhöht, Mandat zur Verschlüsselung",
+    "body": "Die Kommission schlägt die größte Überarbeitung von Europol seit 25 Jahren vor: Erhöhung des Budgets von 1,9 Milliarden Euro auf 3 Milliarden Euro, 900 zusätzliche Mitarbeiter, Ausweitung des Mandats auf verschlüsselte Kommunikation, Krypto-Assets und KI-gestützten Betrug; ein „Technologie- und Innovationszentrum“, dessen Verschlüsselungsarbeit der ProtectEU-Roadmap folgt (die eine Entschlüsselungsfunktion von Europol bis 2030 vorsieht); ein automatisierter „Europäischer Polizeidatenraum“. Der bewaffnete Flügel von ProtectEU: Eine supranationale Agentur, vor der ein Europaabgeordneter bereits warnt, „darf nicht zu Massenüberwachung führen“."
+  },
+  "pega-kouloglou": {
+    "title": "Pegasus im Parlament: Der Wachhund wurde beobachtet",
+    "body": "Citizen Lab enthüllt, dass der Europaabgeordnete Stelios Kouloglou während seiner Amtszeit mit Pegasus gehackt wurde (Infektionen vom 21. Oktober 2022 sowie 6. und 7. März 2023). Als stellvertretendes Mitglied des PEGA-Ausschusses, der den Missbrauch von Pegasus und anderer Spyware in Europa untersuchte, hatte er möglicherweise Zugang zu vertraulichen Beratungen. Citizen Lab weist den Angriff ausdrücklich keinem Urheber zu; eine Koalition von NGOs fordert eine Reaktion der EU. Das Ausspionieren eines mit der Kontrolle von Spyware beauftragten Gremiums kehrt demokratische Aufsicht ins Gegenteil – und niemand wird als verantwortlich benannt."
+  }
+}

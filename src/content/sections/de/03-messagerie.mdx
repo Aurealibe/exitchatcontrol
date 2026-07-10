@@ -1,0 +1,262 @@
+---
+id: 'messagerie'
+part: 1
+order: 3
+title: 'Verschlüsselte Nachrichtenübermittlung'
+---
+
+<p class="part-num">
+  TEIL 02 · GRUNDLAGEN · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Verschlüsselte Nachrichten
+
+Der erste und schnellste Schritt zu mehr Schutz: Verlasse WhatsApp, Messenger und Telegram und wechsle zu einem wirklich verschlüsselten Messenger, idealerweise Open Source.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Weg von</th>
+        <th>Wechsel zu</th>
+        <th>Warum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="old">WhatsApp</span>
+        </td>
+        <td>
+          <span class="new">Signal</span>
+        </td>
+        <td>Gleiche Einfachheit, ohne Meta oder Metadaten-Ernte</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Messenger</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>
+          Messenger ist nicht durchgehend Ende-zu-Ende-verschlüsselt und wurde unter Chatkontrolle
+          1.0 gescannt
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Telegram</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Telegram ist standardmäßig nicht Ende-zu-Ende-verschlüsselt</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ToolCard tool="t-signal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Anfänger</span>
+    <span class="tool-tag">Ersetzt WhatsApp</span>
+    <span class="tool-tag">🇺🇸 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein verschlüsselter Messenger für deine Texte, Anrufe, Videos und Gruppen. Der direkte Ersatz
+    für WhatsApp, genauso einfach.
+  </Fragment>
+  <Fragment slot="why">
+    Standardmäßig Ende-zu-Ende-Verschlüsselung, gemeinnützig, ein geprüftes Protokoll, das den
+    Weltstandard darstellt. Es werden so gut wie keine Metadaten gespeichert, und das Team hat
+    angekündigt, die EU eher zu verlassen als Scans einzubauen.
+  </Fragment>
+  <Fragment slot="who">
+    Alle, ab heute. Es ist der erste und nützlichste Schritt. Einziger Haken: Du brauchst eine
+    Telefonnummer, kannst sie aber hinter einem Benutzernamen verbergen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere Signal über <b>signal.org</b> (App Store, Google Play oder direkt als APK unter
+      Android).
+    </li>
+    <li>Bestätige deine Nummer per SMS und lege anschließend eine PIN fest.</li>
+    <li>
+      Unter Einstellungen &gt; Datenschutz: Erstelle einen <b>Benutzernamen</b>, um deine Nummer zu
+      verbergen, und aktiviere die <b>Registrierungssperre</b>.
+    </li>
+    <li>Lade deine Kontakte ein. Verknüpfe die Desktop-App mit deinem Smartphone.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-simplex">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Mittelstufe</span>
+    <span class="tool-tag">Keine Kennung</span>
+    <span class="tool-tag">🌍 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein verschlüsselter Messenger ohne Konto, Telefonnummer oder feste Kennung. Du stellst eine
+    Verbindung her, indem du einen Link oder QR-Code teilst.
+  </Fragment>
+  <Fragment slot="why">
+    Selbst die Server können konstruktionsbedingt nicht wissen, wer mit wem spricht. Es ist derzeit
+    die stärkste Option gegen Metadatenkorrelation.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudonyme Konten, sensible Kontakte und hohe Risiken. Das Projekt ist jünger als Signal und an
+    manchen Stellen noch etwas unausgereift.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere die App über <b>simplex.chat</b> (F-Droid, Google Play, App Store oder APK).
+    </li>
+    <li>
+      Wähle einen <b>lokalen</b> Anzeigenamen – niemals deinen echten Namen. Er bleibt auf deinem
+      Gerät.
+    </li>
+    <li>
+      Teile zum Hinzufügen eines Kontakts einen <b>einmaligen Einladungslink</b> oder einen QR-Code.
+    </li>
+    <li>Aktiviere die Codesperre und richte bei Bedarf eigene SMP-Server ein.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-session">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Mittelstufe</span>
+    <span class="tool-tag">Kein Telefon</span>
+    <span class="tool-tag">🌍 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Verschlüsselung auf Signal-Niveau, jedoch ohne Telefonnummer und Onion-Routing.
+  </Fragment>
+  <Fragment slot="why">
+    Deine Identität ist eine zufällige „Session-ID“. Der Datenverkehr läuft über ein dezentrales
+    Netzwerk (Lokinet), Dadurch werden die Metadaten stark reduziert.
+  </Fragment>
+  <Fragment slot="who">
+    Wenn eine Telefonnummer eine Belastung darstellt. Kleineres Ökosystem, am besten für wichtige
+    Gespräche geeignet.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere Session über <b>getsession.org</b> (für alle Plattformen).
+    </li>
+    <li>
+      „Konto erstellen“ erzeugt deine Session-ID und eine <b>Wiederherstellungsphrase</b>.
+    </li>
+    <li>
+      Schreibe die Wiederherstellungsphrase auf Papier. Sie ist der einzige Schlüssel zu deinem
+      Konto.
+    </li>
+    <li>Teile deine Session-ID oder den QR-Code mit deinen Kontakten.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-briar">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Erweitert</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein Peer-to-Peer-Messenger, der auch ohne Internet funktioniert: über Bluetooth, Wi-Fi Direct
+    oder Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Kein Server, also nichts, was heruntergefahren oder beschlagnahmt werden muss. Überlebt
+    Internetabschaltungen und Netzwerkzensur.
+  </Fragment>
+  <Fragment slot="who">
+    Proteste, Katastrophen, abgelegene Gebiete, Stromausfälle. Nur Android, und beide Personen
+    benötigen die App.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere Briar über <b>briarproject.org</b> oder F-Droid (nicht für iOS verfügbar).
+    </li>
+    <li>
+      Erstelle ein <b>lokales</b> Konto (Spitzname und Passwort), das nur auf dem Smartphone
+      gespeichert wird.
+    </li>
+    <li>
+      Füge einen Kontakt in deiner Nähe durch Scannen des QR-Codes hinzu – oder aus der Ferne über
+      einen Link.
+    </li>
+    <li>
+      Wenn das Netz ausfällt, schalte Bluetooth ein: Nachrichten werden von Gerät zu Gerät
+      weitergeleitet.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-bitchat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Erweitert</span>
+    <span class="tool-tag">Bluetooth Mesh</span>
+    <span class="tool-tag">🌍 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Jack Dorseys Mesh-Messenger: Telefone in der Nähe leiten Nachrichten sprunghaft weiter, ohne
+    Internet und Server oder Konto.
+  </Fragment>
+  <Fragment slot="why">
+    Ende-zu-Ende-Verschlüsselung (AES-256-GCM) und ein „Panikmodus“, der mit drei Fingertipps alles
+    löscht das Logo.
+  </Fragment>
+  <Fragment slot="who">Proteste und Stromausfälle, neben Briar. Mit Vorsicht verwenden.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Vorsicht: ungeprüft</span>
+    <p>
+      Das eigene Repo warnt davor, dass es „keine externe Sicherheitsüberprüfung erhalten hat“.
+      Großartig für die Widerstandsfähigkeit, aber Setze noch kein Leben darauf ein.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installiere die App über den App Store (iOS) oder als APK über GitHub (Android).</li>
+    <li>Öffne die App und wähle einen Spitznamen. Du musst kein Konto erstellen.</li>
+    <li>In der Nähe befindliche Geräte werden automatisch über Bluetooth erkannt.</li>
+    <li>Bei Gefahr dreimal auf das Logo tippen, um alles zu löschen (Panikmodus).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-molly">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Erweitert</span>
+    <span class="tool-tag">Gehärtetes Signal</span>
+    <span class="tool-tag">Android · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein gehärteter Build von Signal für Android, kompatibel mit demselben Netzwerk.
+  </Fragment>
+  <Fragment slot="why">
+    Datenbank im Ruhezustand verschlüsselt, automatische Sperrung und eine „FOSS“-Variante völlig
+    frei von Google Dienstleistungen.
+  </Fragment>
+  <Fragment slot="who">
+    Fortgeschrittene Benutzer, insbesondere auf GrapheneOS, mit einem hohen Bedrohungsmodell. Nur
+    Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Füge das Molly-Repository in F-Droid hinzu oder lade die APK von <b>molly.im</b> herunter.
+    </li>
+    <li>
+      Wähle <b>Molly-FOSS</b>, wenn du keine Abhängigkeiten von Google möchtest.
+    </li>
+    <li>Registriere dich mit deiner Nummer; Molly nutzt dasselbe Netzwerk wie Signal.</li>
+    <li>Lege ein Datenbankpasswort und eine automatische Sperre fest.</li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Gegen Chatkontrolle</span>
+  <p>
+    Bevorzuge <strong>Open-Source-Apps außerhalb der großen US-Plattformen</strong>, deren Teams
+    öffentlich angekündigt haben, die EU eher zu verlassen als clientseitiges Scannen einzubauen –
+    wie Signal. Wenn das Betriebssystem selbst das Scannen erzwingt, kann allerdings auch die App
+    nicht helfen; siehe Abschnitt 12.
+  </p>
+</div>

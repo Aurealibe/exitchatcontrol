@@ -1,0 +1,47 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telefonie und physisches Gerät'
+---
+
+<p class="part-num">
+  TEIL 19 · HARDWARE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telefonie und physisches Gerät
+
+Die beste App ist nutzlos, wenn das Gerät selbst dich verrät. Hier sind die Gefahren auf Hardwareebene – und die Maßnahmen, mit denen du sie entschärfst.
+
+#### Die Telefonnummer ist ein Identifikator
+
+Deine Nummer verknüpft deine SIM-Karte, dein Gerät mit seiner IMEI, deinen Standort und deine Identität – in den meisten Ländern musst du dich beim Kauf einer SIM-Karte ausweisen. Sie ist der rote Faden, über den all diese Daten zusammengeführt werden können.
+
+- Nutze für sensible Kontakte Messenger **ohne Telefonnummer** wie SimpleX oder Session und ziehe Signal einer SMS immer vor.
+- Für eine getrennte Identität kann eine reine Daten-SIM oder eine Prepaid-eSIM die Verbindung beim Kauf reduzieren. Prüfe dafür die Regeln in deinem Land.
+
+#### IMSI-Catcher und das Mobilfunknetz
+
+„IMSI-Catcher“ oder „Stingrays“ sind falsche Mobilfunkmasten. Sie bringen Smartphones dazu, sich mit ihnen zu verbinden, um deren Kennung zu erfassen und mitunter Kommunikation abzufangen – häufig durch eine Herabstufung auf das schwach verschlüsselte 2G-Netz. Gleichzeitig ermöglicht eine alte Schwachstelle im Mobilfunknetz (SS7) noch immer das Abfangen von SMS und die Ortung von Smartphones aus der Ferne. Ein weiterer Grund, auf SMS zu verzichten.
+
+- **Deaktiviere 2G** in den Einstellungen – möglich unter Android und GrapheneOS –, um den wichtigsten Angriffsweg zu schließen.
+- Schalte bei einer Demonstration oder an einem sensiblen Ort den **Flugmodus** ein oder lege das Smartphone in eine **Faraday-Tasche**, die alle Funksignale blockiert. Die EFF veröffentlicht mit Rayhunter sogar ein freies Werkzeug zum Erkennen von IMSI-Catchern.
+
+#### Biometrie oder Code?
+
+<div class="box warn">
+  <span class="lab">Ein Finger lässt sich erzwingen, ein Code nicht</span>
+  <p>
+    Dein Gesicht oder dein Finger kann gegen deinen Willen an den Sensor gehalten werden – etwa an
+    einer Grenze oder bei einer Festnahme. Ein Passwort in deinem Kopf lässt sich nicht auf dieselbe
+    Weise erzwingen. Sorge vor einer riskanten Situation dafür, dass wieder der Code verlangt wird:
+    Halte auf dem iPhone die Seitentaste und eine Lautstärketaste gedrückt, bis der SOS-Bildschirm
+    erscheint. Nutze unter Android oder GrapheneOS im Ein/Aus-Menü den Modus <b>„Sperren“</b>; er
+    deaktiviert die Biometrie, bis die PIN eingegeben wurde. Wähle eine lange Passphrase statt einer
+    vierstelligen PIN. GrapheneOS bietet sogar eine <b>Notfall-PIN</b>, die das Smartphone löscht.
+  </p>
+</div>
+
+#### Weg von Microsoft und Apple
+
+Vergiss den Computer nicht: Windows übermittelt fortlaufend Telemetriedaten und wollte mit „Recall“ sogar regelmäßige Bildschirmaufnahmen einführen; macOS meldet, welche Apps du startest. Der konsequente Ausstieg ist Linux (siehe Abschnitt 12). Wenn das noch nicht infrage kommt, deaktiviere Telemetrie, Werbe-ID und „Recall“ und richte eine Firewall für ausgehende Verbindungen ein, etwa Little Snitch auf dem Mac.
