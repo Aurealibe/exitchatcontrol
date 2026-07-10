@@ -138,7 +138,7 @@ export const DIRECTORY: DirEntry[] = [
   // ─── selfhost ───
   { name: 'YunoHost', cat: 'selfhost', license: 'AGPL-3.0', href: 'https://yunohost.org', fr: 'Serveur personnel clé en main (mail inclus).', en: 'Turnkey personal server (email included).' },
   { name: 'StartOS (Start9)', cat: 'selfhost', license: 'MIT', href: 'https://start9.com', fr: 'Serveur souverain, Tor par défaut.', en: 'Sovereign server, Tor by default.' },
-  { name: 'Synapse (Matrix)', cat: 'selfhost', license: 'AGPL-3.0', href: 'https://element.io/server', fr: 'Votre serveur de messagerie fédéré.', en: 'Your federated chat server.' },
+  { name: 'Synapse (Matrix)', cat: 'selfhost', license: 'AGPL-3.0', href: 'https://element.io/server-suite', fr: 'Votre serveur de messagerie fédéré.', en: 'Your federated chat server.' },
   // ─── finance ───
   { name: 'Bitcoin Core', cat: 'finance', license: 'MIT', href: 'https://bitcoincore.org', fr: 'La monnaie qu’on détient soi-même.', en: 'Money you hold yourself.' },
   { name: 'Monero', cat: 'finance', license: 'BSD-3-Clause', href: 'https://www.getmonero.org', fr: 'Transactions confidentielles par défaut.', en: 'Private transactions by default.' },
