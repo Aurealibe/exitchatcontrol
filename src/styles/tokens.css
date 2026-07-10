@@ -25,6 +25,10 @@
   --lvl3: #a83324;
   /* manifesto panel inverts bg/text, so its accent comes from the OTHER scheme */
   --manifesto-accent: #f2c455;
+  /* the desk behind the dossier sheet (fixed frame) */
+  --desk-bg: #e2ddcd;
+  --desk: clamp(0.5rem, 1.4vw, 0.9rem);
+  --topbar-h: 3rem;
   --mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Roboto Mono', Menlo, Consolas, monospace;
   --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Charter, Georgia, 'Times New Roman', serif;
   --sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -50,6 +54,7 @@
     --lvl2: #e6b23f;
     --lvl3: #e0705f;
     --manifesto-accent: #7d5a10;
+    --desk-bg: #0a0c10;
   }
 }
 :root[data-theme='dark'] {
@@ -70,6 +75,7 @@
   --lvl2: #e6b23f;
   --lvl3: #e0705f;
   --manifesto-accent: #7d5a10;
+  --desk-bg: #0a0c10;
 }
 :root[data-theme='light'] {
   --bg: #efece3;
@@ -89,6 +95,7 @@
   --lvl2: #8a6410;
   --lvl3: #a83324;
   --manifesto-accent: #f2c455;
+  --desk-bg: #e2ddcd;
 }
 
 /* ─── bilingual switch (CSS-only, works pre-hydration) ─── */
@@ -100,6 +107,7 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
   margin: 0;
+  padding: var(--desk);
   background: var(--bg);
   color: var(--text);
   font-family: var(--serif);
@@ -126,6 +134,18 @@ hr.sep { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
   font-size: 0.7rem; font-weight: 600; color: var(--accent);
 }
 
+/* ─── the dossier frame · sheet-in-a-frame chrome ────────────────────────────
+   One fixed element: its border is the page CONTOUR, its huge box-shadow
+   paints the desk around/under the scrolling sheet. The sticky topbar sits
+   exactly at the frame's top edge and shares its border color — navbar,
+   contour and reading-progress fuse into one continuous line. */
+.frame {
+  position: fixed; inset: var(--desk); z-index: 80; pointer-events: none;
+  border: 1px solid var(--rule-strong);
+  box-shadow: 0 0 0 100vmax var(--desk-bg);
+}
+@media print { .frame { display: none; } }
+
 /* ─── skip link (a11y) ─── */
 .skip-link {
   position: absolute; left: -9999px; top: 0; z-index: 100;
@@ -138,13 +158,15 @@ hr.sep { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 
 /* ─── top bar ─── */
 .topbar {
-  position: sticky; top: 0; z-index: 50;
+  position: sticky; top: var(--desk); z-index: 50;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  padding: 0.55rem clamp(1.1rem, 4vw, 2rem);
+  height: var(--topbar-h); box-sizing: border-box;
+  padding: 0 clamp(1.1rem, 4vw, 2rem);
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(9px);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule-strong);
 }
+@media print { .topbar { position: static; } }
 .topbar .brand {
   font-family: var(--mono); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.04em;
   text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 0.5rem;
@@ -213,9 +235,9 @@ hr.sep { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .status p { margin: 0.25rem 0 0; font-size: 0.98rem; }
 
 /* ─── sections ─── */
-main { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
-section { margin-block: clamp(3rem, 7vw, 5rem); scroll-margin-top: 4rem; }
-[id] { scroll-margin-top: 4rem; }
+main { padding-block: clamp(1.5rem, 3vw, 2.2rem) clamp(2.5rem, 6vw, 4.5rem); }
+section { margin-block: clamp(3rem, 7vw, 5rem); scroll-margin-top: calc(var(--desk) + var(--topbar-h) + 1rem); }
+[id] { scroll-margin-top: calc(var(--desk) + var(--topbar-h) + 1rem); }
 .part-head { border-top: 2px solid var(--text); padding-top: 1rem; margin-bottom: 2rem; }
 .part-head .num { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--accent); }
 .sec-anchor { margin-left: 0.6ch; text-decoration: underline; text-underline-offset: 3px; color: var(--text-dim); }
@@ -568,8 +590,8 @@ a.cite:hover { color: var(--accent-bright); text-decoration: underline; }
 /* ─── back to top (scroll-driven reveal · CSS only · fallback: visible) ─── */
 .to-top {
   position: fixed; z-index: 40;
-  right: max(1rem, env(safe-area-inset-right));
-  bottom: max(1rem, env(safe-area-inset-bottom));
+  right: max(calc(var(--desk) + 0.85rem), env(safe-area-inset-right));
+  bottom: max(calc(var(--desk) + 0.85rem), env(safe-area-inset-bottom));
   display: grid; place-items: center; width: 2.6rem; height: 2.6rem;
   font-family: var(--mono); font-weight: 700; font-size: 1rem; text-decoration: none;
   background: var(--surface); color: var(--text-dim);
@@ -624,7 +646,8 @@ footer small { color: var(--text-dim); font-family: var(--mono); font-size: 0.72
 
 /* ① reading progress — the file fills as you read it */
 .progress {
-  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 60;
+  position: fixed; top: calc(var(--desk) + var(--topbar-h) - 2px);
+  left: var(--desk); right: var(--desk); height: 3px; z-index: 60;
   background: var(--accent); transform-origin: 0 50%; transform: scaleX(0);
   pointer-events: none;
 }

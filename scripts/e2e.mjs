@@ -48,6 +48,7 @@ check('back-to-top prerendered', html.includes('class="to-top"'))
 check('timeline events deep-linkable', html.includes('id="tl-2020-02-11"') && html.includes('id="tl-1993"'))
 check('section § anchors', html.includes('sec-anchor'))
 check('reading progress bar prerendered', html.includes('class="progress"'))
+check('dossier frame prerendered', html.includes('class="frame"'))
 check('nika featured card (guide’s pick) prerendered', html.includes('dir-featured') && html.includes('nika.sh'))
 {
   /* SEO backlinks must be FOLLOW: rel carries noopener only. A later refactor

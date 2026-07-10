@@ -1,6 +1,7 @@
 /* Print: the guide is meant to be archived, printed, handed over.
    Flatten chrome, force light paper, open every <details>, show link URLs. */
 @media print {
+  body { padding: 0; }
   :root {
     --bg: #ffffff; --surface: #ffffff; --surface-2: #f2f0e8;
     --text: #111111; --text-dim: #444444; --rule: #bbbbbb; --rule-strong: #888888;

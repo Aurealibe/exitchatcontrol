@@ -21,8 +21,10 @@ export default function Home() {
       <a className="skip-link" href="#menace">
         <T fr="Aller au contenu" en="Skip to content" />
       </a>
-      {/* reading progress — pure CSS scroll-driven (hidden when unsupported
-          or reduced-motion; see tokens.css) */}
+      {/* the dossier frame: contour + desk, fused with the topbar (tokens.css) */}
+      <div className="frame" aria-hidden="true"></div>
+      {/* reading progress — pure CSS scroll-driven, rides the topbar's
+          bottom border (hidden when unsupported or reduced-motion) */}
       <div className="progress" aria-hidden="true"></div>
       <TopBar />
       <noscript>
