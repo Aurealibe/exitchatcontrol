@@ -1,0 +1,10 @@
+# Production compose (what Coolify deploys): one service, the static site
+# built by the multi-stage Dockerfile and served by hardened nginx on port
+# 80 (EXPOSEd by the Dockerfile). No ports/expose/networks here: the
+# platform's reverse proxy (Traefik) routes to the container from the
+# domain assigned in Coolify. For local development use
+# docker-compose.dev.yml instead.
+services:
+  web:
+    build: .
+    restart: always

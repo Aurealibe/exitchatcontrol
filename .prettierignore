@@ -1,0 +1,7 @@
+dist/
+.astro/
+node_modules/
+pnpm-lock.yaml
+index.html
+src/icons.generated.ts
+src/styles/brands.generated.css
