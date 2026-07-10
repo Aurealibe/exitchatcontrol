@@ -54,6 +54,14 @@ const act = [
   { href: 'https://signal.org/blog/', label: 'Signal · blog' },
 ]
 
+const donate = [
+  {
+    ticker: 'XMR',
+    addr: '42qH4daCTfrguG17aPbGC46vompZajjVZhMCuJ9tb5r9fciQa2wSH2N3RYZohjT9Tw1gdTuQsg4MGFsSp1zLVkQAEgap6j4',
+  },
+  { ticker: 'BTC', addr: 'bc1qc4384nue4ea3gn97qkuxjfnrj48zskh6032ysc' },
+]
+
 const offlineHref = `/exitchatcontrol-offline${locale === 'en' ? '' : `.${locale}`}.html`
 const localeRoot = `${localePath(locale)}/`.replace('//', '/')
 ---
@@ -116,6 +124,19 @@ const localeRoot = `${localePath(locale)}/`.replace('//', '/')
     </small>
     <p class="mt-3 mb-0 text-center font-mono text-xs text-dim">
       by <Ext href="https://x.com/AureaLibe">Aurealibe</Ext>
+    </p>
+  </div>
+  <div class="wrap pb-8 text-center">
+    <p class="eyebrow">{t('footer.support')}</p>
+    <p class="mt-1 font-mono text-xs text-dim">
+      {
+        donate.map((d) => (
+          <>
+            <span>{d.ticker}</span> <span class="break-all">{d.addr}</span>
+            <br />
+          </>
+        ))
+      }
     </p>
   </div>
 </footer>

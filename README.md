@@ -39,6 +39,13 @@ Not comfortable with code? Open an issue with the app's name, its link, and why 
 
 See [`LICENSE`](./LICENSE).
 
+## Support
+
+If this guide is useful and you want to help keep it going:
+
+- **Monero (XMR)** — `42qH4daCTfrguG17aPbGC46vompZajjVZhMCuJ9tb5r9fciQa2wSH2N3RYZohjT9Tw1gdTuQsg4MGFsSp1zLVkQAEgap6j4`
+- **Bitcoin (BTC)** — `bc1qc4384nue4ea3gn97qkuxjfnrj48zskh6032ysc`
+
 ---
 
-_Privacy is a right, not a confession. To encrypt is to vote. To self-host is to disobey. To reclaim your tools is to become ungovernable._
+_Encrypting is protecting your private life. Self-hosting is pulling yourself out of Big Tech's surveillance. Taking back control of your tools is becoming ungovernable and sovereign._
