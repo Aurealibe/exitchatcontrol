@@ -77,7 +77,14 @@ export function runE2E() {
   ok('click-bbf-all', click('.bbf-all'))
   ok('bbf-cleared', bb?.getAttribute('data-bbf') === null)
 
-  // 6 · restore neutral state (fresh headless profile anyway, but be polite)
+  // 6 · marquee pause toggle (WCAG 2.2.2 — moving content must be pausable)
+  const showcase = document.getElementById('trousse')
+  ok('click-mq-pause', click('.mq-toggle'))
+  ok('mq-paused', showcase?.getAttribute('data-paused') !== null)
+  ok('click-mq-play', click('.mq-toggle'))
+  ok('mq-resumed', showcase?.getAttribute('data-paused') === null)
+
+  // 7 · restore neutral state (fresh headless profile anyway, but be polite)
   click('.lang-fr')
 
   const failed = checks.filter((c) => !c.pass)

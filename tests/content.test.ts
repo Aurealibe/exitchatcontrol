@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { EVENTS } from '../src/content/events'
 import { DIRECTORY, DIR_CATEGORIES } from '../src/content/directory'
+import { SHELF, MARQUEE } from '../src/content/showcase'
 import { DRIFT, driftTags } from '../src/content/drift'
 import { BRAND_ICONS } from '../src/icons.generated'
 
@@ -113,6 +114,29 @@ describe('big brother observatory (drift)', () => {
     for (const ev of DRIFT) {
       expect(tl.has(ev.src.href), `${ev.id} reuses a precedents source`).toBe(false)
     }
+  })
+})
+
+describe('survival-kit showcase', () => {
+  it('shelf: 10 heroes, bilingual, valid anchors, icons resolve', () => {
+    expect(SHELF.length).toBe(10)
+    for (const s of SHELF) {
+      expect(s.anchor.startsWith('#'), s.name).toBe(true)
+      expect(s.fr.length).toBeGreaterThan(8)
+      expect(s.en.length).toBeGreaterThan(8)
+      if (s.slug) expect(BRAND_ICONS[s.slug], `${s.name}: icon ${s.slug}`).toBeDefined()
+    }
+    expect(SHELF.some((s) => s.name === 'Nika')).toBe(true)
+  })
+
+  it('marquee: every slug has an embedded icon, no duplicates', () => {
+    const slugs = MARQUEE.map((m) => m.slug)
+    expect(new Set(slugs).size).toBe(slugs.length)
+    for (const m of MARQUEE) {
+      expect(BRAND_ICONS[m.slug], m.slug).toBeDefined()
+      expect(/^#[0-9a-f]{6}$/i.test(m.brand), m.slug).toBe(true)
+    }
+    expect(MARQUEE.length).toBeGreaterThanOrEqual(25)
   })
 })
 

@@ -84,6 +84,7 @@ export function StatusBanner() {
 }
 
 const TOC: { href: string; p: string; fr: string; en: string }[] = [
+  { href: '#trousse', p: '★', fr: 'La trousse de survie', en: 'The survival kit' },
   { href: '#menace', p: '00', fr: 'Comprendre la menace', en: 'Understand the threat' },
   { href: '#precedents', p: '⏱', fr: 'Les précédents (1993-2026)', en: 'The precedents (1993-2026)' },
   { href: '#bigbrother', p: '👁', fr: 'Big Brother, pièce par pièce', en: 'Big Brother, piece by piece' },

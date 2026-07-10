@@ -455,7 +455,6 @@ a.tl-date:hover { color: var(--accent); text-decoration: underline; text-underli
 }
 .bbfront:hover { border-color: var(--accent); }
 .bbfront[aria-pressed='true'] { border-color: var(--accent); border-top-color: var(--accent); }
-.bbfront .bbf-ico { font-family: var(--sans); font-size: 1.15rem; display: block; }
 .bbfront b { font-family: var(--mono); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin: 0.35rem 0 0.2rem; }
 .bbfront .d { font-size: 0.78rem; color: var(--text-dim); line-height: 1.45; display: block; }
 .bb-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin: 1.6rem 0 0; }
@@ -700,3 +699,82 @@ footer small { color: var(--text-dim); font-family: var(--mono); font-size: 0.72
   background: var(--accent); border-radius: 2px; padding: 0.18rem 0.5rem; margin-bottom: 0.5rem;
 }
 .dir-featured:hover { border-color: var(--accent-bright); }
+
+/* ═══ survival-kit showcase · product shelf + arsenal marquee ════════════════
+   Full-bleed band under the breaking banner. Shelf: snap-scroll product cards
+   deep-linking to the dossier cards. Marquee: decorative arsenal strip —
+   CSS-transform loop, pause button ([data-paused]), static wrap under
+   reduced-motion. */
+.showcase {
+  border-bottom: 1px solid var(--rule);
+  background:
+    radial-gradient(90% 120% at 8% -20%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%),
+    var(--bg);
+  padding-block: clamp(2rem, 5vw, 3.4rem) 0;
+  overflow: hidden;
+}
+.wrap-wide { max-width: 74rem; margin-inline: auto; padding-inline: clamp(1.1rem, 4vw, 2rem); }
+.showcase-head h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); text-transform: uppercase; margin: 0.35rem 0 0; }
+.showcase-lede { color: var(--text-dim); margin: 0.5rem 0 0; max-width: 58ch; }
+
+.shelf {
+  display: flex; gap: 0.9rem; margin-top: 1.6rem; padding-bottom: 1.1rem;
+  overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity; scroll-padding-inline: clamp(1.1rem, 4vw, 2rem);
+  -webkit-overflow-scrolling: touch;
+  mask-image: linear-gradient(90deg, transparent 0, #000 1.6rem, #000 calc(100% - 1.6rem), transparent 100%);
+}
+.shelf::-webkit-scrollbar { height: 6px; }
+.shelf::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+.shelf-card {
+  flex: 0 0 clamp(12.5rem, 30vw, 15rem); scroll-snap-align: start;
+  display: flex; flex-direction: column; gap: 0.55rem;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: 1.05rem 1.1rem 0.95rem; text-decoration: none; color: var(--text);
+}
+.shelf-card:hover { border-color: var(--accent); color: var(--text); }
+.shelf-tile {
+  width: 3.4rem; height: 3.4rem; border-radius: 14px; display: grid; place-items: center;
+  font-family: var(--mono); font-weight: 700; font-size: 1.15rem;
+  background: var(--b, var(--accent)); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+.shelf-tile svg { width: 56%; height: 56%; }
+.shelf-name { font-family: var(--mono); font-size: 0.95rem; letter-spacing: 0.01em; }
+.shelf-role { font-size: 0.86rem; line-height: 1.45; color: var(--text-dim); flex: 1; }
+.shelf-go {
+  font-family: var(--mono); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent);
+  opacity: 0; transform: translateY(3px); transition: opacity 0.16s ease-out, transform 0.16s ease-out;
+}
+.shelf-card:hover .shelf-go, .shelf-card:focus-visible .shelf-go { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: no-preference) {
+  .shelf-card { transition: transform 0.16s ease-out, border-color 0.16s ease-out; }
+  .shelf-card:hover { transform: translateY(-3px); }
+}
+@media (prefers-reduced-motion: reduce) { .shelf-go { opacity: 1; transform: none; transition: none; } }
+
+/* arsenal marquee */
+.mq { border-top: 1px dashed var(--rule); margin-top: 0.4rem; padding-block: 0.9rem; }
+.mq-track { display: flex; width: max-content; gap: 0.55rem; }
+.mq-seq { display: flex; gap: 0.55rem; padding-right: 0.55rem; }
+.mq-chip {
+  width: 2.15rem; height: 2.15rem; border-radius: 9px; display: grid; place-items: center;
+  background: var(--b, var(--accent)); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  flex: none;
+}
+.mq-chip svg { width: 58%; height: 58%; }
+@media (prefers-reduced-motion: no-preference) {
+  .mq-track { animation: mq-slide 48s linear infinite; will-change: transform; }
+  .showcase[data-paused] .mq-track, .mq-track:hover { animation-play-state: paused; }
+}
+@keyframes mq-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .mq-track { flex-wrap: wrap; width: auto; padding-inline: clamp(1.1rem, 4vw, 2rem); }
+  .mq-seq:last-child { display: none; }
+  .mq-toggle { display: none; }
+}
+.mq-legend {
+  display: flex; align-items: center; gap: 0.8rem; margin: 0.9rem auto 0;
+  font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim);
+}
+@media print { .showcase { display: none; } }

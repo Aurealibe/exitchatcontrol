@@ -64,6 +64,12 @@ check('nika featured card (guide’s pick) prerendered', html.includes('dir-feat
   check('follow backlinks intact (nika.sh + vpn-gratuit.fr, no nofollow/noreferrer)', bad.length === 0, bad.join(' | '))
 }
 check('agentic-AI pointer in AI section', html.includes('dir-ia-locale-agentique'))
+{
+  const shelfCards = (html.match(/class="shelf-card"/g) ?? []).length
+  check('survival-kit shelf prerendered (10 hero cards)', shelfCards === 10, `${shelfCards}`)
+  check('arsenal marquee + pause control prerendered', html.includes('mq-track') && html.includes('mq-toggle'))
+  check('showcase in TOC', html.includes('#trousse'))
+}
 check('observatory events prerendered', (html.match(/bb-item/g) ?? []).length >= 30, `${(html.match(/bb-item/g) ?? []).length}`)
 check('observatory deep-linkable', html.includes('id="bb-going-dark"') && html.includes('id="bb-pega-kouloglou"'))
 check('observatory counter-wave cites Tapestry', html.includes('https://thealliance.ai/projects/tapestry'))

@@ -138,6 +138,14 @@ const vanilla = `
   })
   on('.share-copy', function (el) { copyLink(el) })
   on('.share-print', function () { window.print() })
+  on('.mq-toggle', function (el) {
+    var sec = document.getElementById('trousse')
+    if (!sec) return
+    var paused = sec.hasAttribute('data-paused')
+    if (paused) sec.removeAttribute('data-paused')
+    else sec.setAttribute('data-paused', '')
+    el.setAttribute('aria-pressed', String(!paused))
+  })
   var KEY = 'ecc-checklist', done = {}
   try { done = JSON.parse(localStorage.getItem(KEY) || '{}') } catch (e) {}
   document.querySelectorAll('.check input[data-id]').forEach(function (box) {

@@ -1,5 +1,6 @@
 import { T } from '../lib/i18n'
 import { TopBar, FilterBar } from '../components/Chrome'
+import { Showcase } from '../components/Showcase'
 import { Footer } from '../components/Footer'
 import { Hero, StatusBanner, Toc, Threat, Memo } from '../sections/intro'
 import { Precedents } from '../sections/precedents'
@@ -39,6 +40,7 @@ export default function Home() {
       </noscript>
       <Hero />
       <StatusBanner />
+      <Showcase />
       <main className="wrap">
         <Toc />
         <FilterBar />
