@@ -1,0 +1,203 @@
+{
+  "signal": {
+    "body": "Ersetzt WhatsApp. Standardmäßig E2EE, gemeinnützige Stiftung."
+  },
+  "simplex-chat": {
+    "body": "Überhaupt keine Kennung: Selbst Server können nicht wissen, wer mit wem spricht."
+  },
+  "session": {
+    "body": "Keine Telefonnummer, Zwiebelrouting."
+  },
+  "element-matrix": {
+    "body": "Ersetzt Discord/Slack. Föderiert und selbst hostbar."
+  },
+  "briar": {
+    "body": "P2P ohne Internet (Bluetooth/Tor): Proteste, Stromausfälle."
+  },
+  "molly": {
+    "body": "Gehärtetes Signal für Android (vollständig FOSS-Variante)."
+  },
+  "thunderbird": {
+    "body": "Der maßgebliche freie E-Mail-Client mit integriertem OpenPGP."
+  },
+  "proton-mail": {
+    "body": "Open-Source-Apps des Schweizer Verschlüsselungsdienstes."
+  },
+  "tuta": {
+    "body": "Freie Apps, Post-Quanten-Verschlüsselung, EU-Rechtsordnung."
+  },
+  "firefox": {
+    "body": "Ersetzt Chrome. Die unabhängige Browser-Engine."
+  },
+  "tor-browser": {
+    "body": "Netzwerkanonymität, Anti-Fingerprinting."
+  },
+  "mullvad-browser": {
+    "body": "Der Browser des Tor-Projekts, ohne das Tor-Netzwerk."
+  },
+  "brave": {
+    "body": "Chromium, das standardmäßig Werbung und Tracker blockiert."
+  },
+  "ublock-origin": {
+    "body": "DER Werbe- und Trackerblocker."
+  },
+  "searxng": {
+    "body": "Selbsthostbare Metasuchmaschine."
+  },
+  "wireguard": {
+    "body": "Das moderne VPN-Protokoll, auf dem jeder aufbaut."
+  },
+  "mullvad-vpn": {
+    "body": "VPN ohne Benutzerkonto (akzeptiert Bargeld/Monero)."
+  },
+  "proton-vpn": {
+    "body": "Freie Clients und ein ehrlicher kostenloser Tarif."
+  },
+  "tor": {
+    "body": "Das Netzwerk, das deine Identität von deinen Aktivitäten trennt."
+  },
+  "tailscale": {
+    "body": "Privates WireGuard-Netzwerk zwischen deinen Geräten."
+  },
+  "headscale": {
+    "body": "Der Tailscale-Koordinationsserver auf deiner eigenen Hardware."
+  },
+  "pi-hole": {
+    "body": "Blockiert Werbung und Tracker für das gesamte Netzwerk."
+  },
+  "adguard-home": {
+    "body": "Pi-Hole-Alternative mit moderner Benutzeroberfläche."
+  },
+  "bitwarden": {
+    "body": "Plattformübergreifender Passwort-Manager."
+  },
+  "vaultwarden": {
+    "body": "Leichter, selbst gehosteter Bitwarden-Server."
+  },
+  "keepassxc": {
+    "body": "100 % lokaler Tresor, keine Cloud."
+  },
+  "aegis": {
+    "body": "2FA-Codes (TOTP) in einem lokalen verschlüsselten Tresor (Android)."
+  },
+  "ente-auth": {
+    "body": "2FA mit Ende-zu-Ende-verschlüsselter Synchronisierung."
+  },
+  "nextcloud": {
+    "body": "Ersetzt die gesamte Google-Suite zu Hause."
+  },
+  "cryptomator": {
+    "body": "Verschlüsselt deine Dateien, BEVOR sie eine Cloud erreichen."
+  },
+  "syncthing": {
+    "body": "Synchronisierung von Gerät zu Gerät, kein Server."
+  },
+  "restic": {
+    "body": "Verschlüsselte, deduplizierte, automatische Backups."
+  },
+  "immich": {
+    "body": "Selbstgehostete Google Fotos (Gesichter, Suche)."
+  },
+  "ente-photos": {
+    "body": "E2EE-Fotos, Erkennung auf dem Gerät."
+  },
+  "libreoffice": {
+    "body": "Das freie Office-Paket."
+  },
+  "onlyoffice": {
+    "body": "Selbst hostbare Office-Suite für die Zusammenarbeit."
+  },
+  "joplin": {
+    "body": "Markdown-Notizen, optionale Verschlüsselung und Synchronisierung."
+  },
+  "standard-notes": {
+    "body": "Notizen standardmäßig verschlüsselt."
+  },
+  "cryptpad": {
+    "body": "Kollaboratives Google Docs, vollständig verschlüsselt."
+  },
+  "organic-maps": {
+    "body": "Offline-Karten ohne Tracking (OpenStreetMap)."
+  },
+  "osmand": {
+    "body": "Power-User-Karten (Wandern, Höhenlinien)."
+  },
+  "jitsi-meet": {
+    "body": "Videoanrufe ohne Konto, selbst hostbar."
+  },
+  "mastodon": {
+    "body": "Ersetzt X/Twitter. Föderiert, ohne aufgezwungenen Algorithmus."
+  },
+  "pixelfed": {
+    "body": "Das Instagram des Fediversums."
+  },
+  "peertube": {
+    "body": "Föderiertes YouTube."
+  },
+  "lemmy": {
+    "body": "Föderiertes Reddit."
+  },
+  "damus": {
+    "body": "Nostr-Client: Deine Identität ist ein Schlüsselpaar."
+  },
+  "ollama": {
+    "body": "Führt LLMs lokal aus – mit einem einzigen Befehl."
+  },
+  "llama-cpp": {
+    "body": "Die lokale Inferenz-Engine, die alles möglich gemacht hat."
+  },
+  "jan": {
+    "body": "Einfache, vollständig lokale Oberfläche nach dem Vorbild von ChatGPT."
+  },
+  "gpt4all": {
+    "body": "Datenschutzbewusste lokale LLMs, CPU-freundlich."
+  },
+  "pocketpal": {
+    "body": "Führt LLMs offline auf deinem Smartphone aus (iOS/Android), ohne Konto."
+  },
+  "grapheneos": {
+    "body": "Entgoogeltes, gehärtetes Android (Pixel)."
+  },
+  "tails": {
+    "body": "Amnestisches USB-Betriebssystem, das den gesamten Verkehr über Tor leitet."
+  },
+  "qubes-os": {
+    "body": "Kompartimentierung über versiegelte VMs."
+  },
+  "f-droid": {
+    "body": "Der vollständig freie App-Store."
+  },
+  "postmarketos": {
+    "body": "Linux auf verlassenen Telefonen."
+  },
+  "yunohost": {
+    "body": "Schlüsselfertiger persönlicher Server (E-Mail inklusive)."
+  },
+  "startos": {
+    "body": "Souveräner Server, standardmäßig Tor."
+  },
+  "synapse": {
+    "body": "Dein föderierter Chatserver."
+  },
+  "bitcoin-core": {
+    "body": "Geld, das du selbst hältst."
+  },
+  "monero": {
+    "body": "Standardmäßig private Transaktionen."
+  },
+  "securedrop": {
+    "body": "Anonyme Dokumentenannahme für Redaktionen."
+  },
+  "onionshare": {
+    "body": "Teilt Dateien direkt über Tor, ohne Vermittler."
+  },
+  "rayhunter": {
+    "body": "IMSI-Catcher-Detektor."
+  },
+  "mat2": {
+    "body": "Entfernt Metadaten vor der Veröffentlichung."
+  },
+  "exiftool": {
+    "body": "EXIF-Metadaten lesen und löschen."
+  }
+}

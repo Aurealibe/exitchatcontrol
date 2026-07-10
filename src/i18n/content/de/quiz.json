@@ -1,0 +1,302 @@
+{
+  "questions": {
+    "messaging": {
+      "label": "Nachrichten",
+      "prompt": "Wie sprichst du die meiste Zeit mit Freunden und Familie?",
+      "rec": "Verlagere vertrauliche Gespräche zu Signal, SimpleX oder Session.",
+      "options": {
+        "o0": {
+          "label": "WhatsApp / Messenger / SMS",
+          "hint": "Metadaten und zentralisierte Plattformen bleiben die Schwachstelle."
+        },
+        "o1": {
+          "label": "Telegram für die meisten Gespräche",
+          "hint": "Besser als die großen Plattformen, aber die Privatsphäre ist immer noch eingeschränkt."
+        },
+        "o2": {
+          "label": "Signal oder Molly für die meisten Chats",
+          "hint": "Bereits eine solide Basis für Zensurwiderstand."
+        },
+        "o3": {
+          "label": "SimpleX / Session / Matrix für den sensiblen Einsatz",
+          "hint": "Weniger Abhängigkeit von einer Telefonnummer und einer zentralen Plattform."
+        }
+      }
+    },
+    "email": {
+      "label": "E-Mail",
+      "prompt": "Welchen Dienst nutzt du am häufigsten für deine E-Mails?",
+      "rec": "Nutze Proton Mail oder Tuta und verwende PGP für wichtige Kontakte.",
+      "options": {
+        "o0": {
+          "label": "Gmail / Outlook / iCloud Mail",
+          "hint": "Speicher und Inhaltszugriff bleiben stark zentralisiert."
+        },
+        "o1": {
+          "label": "Proton Mail oder Tuta für den täglichen Gebrauch",
+          "hint": "Bereits eine stärkere Option für den Datenschutz."
+        },
+        "o2": {
+          "label": "Proton / Tuta + PGP für einige Kontakte",
+          "hint": "Bei konsequenter Anwendung ein guter Widerstand."
+        },
+        "o3": {
+          "label": "Reguläres PGP/OpenPGP mit sorgfältigen Metadatengewohnheiten",
+          "hint": "Eine viel robustere Haltung."
+        }
+      }
+    },
+    "browser": {
+      "label": "Browser & Suche",
+      "prompt": "Welchen Browser und welche Suchmaschine nutzt du am häufigsten?",
+      "rec": "Ersetze Chrome und Google durch einen datenschutzfreundlichen Browser und eine datenschutzfreundliche Suchmaschine.",
+      "options": {
+        "o0": {
+          "label": "Chrome + Google",
+          "hint": "Praktisch, aber gut verfolgbar."
+        },
+        "o1": {
+          "label": "Firefox oder Brave mit einer privaten Suchmaschine",
+          "hint": "Ein echter Fortschritt für den Datenschutz."
+        },
+        "o2": {
+          "label": "Brave / Firefox + DuckDuckGo / Startpage / SearXNG",
+          "hint": "Bereits eine solide tägliche Grundlinie."
+        },
+        "o3": {
+          "label": "Mullvad Browser / LibreWolf / Tor Browser nach Kontext",
+          "hint": "Eine stärkere Haltung gegen Überwachung."
+        }
+      }
+    },
+    "dns": {
+      "label": "DNS",
+      "prompt": "Wie lässt du Domainnamen auflösen?",
+      "rec": "Wechsle zu verschlüsseltem DNS mit einem datensparsamen, datenschutzorientierten Resolver.",
+      "options": {
+        "o0": {
+          "label": "DNS deines Internetanbieters oder Routers",
+          "hint": "Die einfachste Option, aber oft die am wenigsten private."
+        },
+        "o1": {
+          "label": "Verschlüsseltes DNS von einem Mainstream-Anbieter",
+          "hint": "Ein guter erster Schritt."
+        },
+        "o2": {
+          "label": "Quad9 / Mullvad DNS / NextDNS",
+          "hint": "Eine echte Verbesserung, wenn du die Nachverfolgbarkeit einschränken möchtest."
+        },
+        "o3": {
+          "label": "Verschlüsseltes DNS und eine bewusste Anti-Tracking-Strategie",
+          "hint": "Eine bewusstere und robustere Haltung."
+        }
+      }
+    },
+    "vpn": {
+      "label": "VPN",
+      "prompt": "Welche Art von VPN nutzt du?",
+      "rec": "Nutze ein seriöses VPN ohne Aktivitätsprotokolle, etwa Mullvad, Proton VPN oder IVPN.",
+      "options": {
+        "o0": {
+          "label": "Kein VPN",
+          "hint": "Der exponierteste Fall für die Rückverfolgbarkeit von Netzwerken."
+        },
+        "o1": {
+          "label": "Ein kostenloses oder zweifelhaftes VPN",
+          "hint": "Kann schlimmer sein als gar nichts, wenn der Anbieter undurchsichtig ist."
+        },
+        "o2": {
+          "label": "Ein seriöses No-Log-VPN mit klaren Richtlinien",
+          "hint": "Eine echte Verbesserung der Privatsphäre."
+        },
+        "o3": {
+          "label": "Mullvad / Proton VPN / IVPN für den regelmäßigen Gebrauch",
+          "hint": "Eine ernstere und kohärentere Haltung."
+        }
+      }
+    },
+    "passwords": {
+      "label": "Passwörter",
+      "prompt": "Wie verwaltest du deine Passwörter?",
+      "rec": "Nutze überall einen Passwortmanager und für jedes Konto ein eigenes langes Passwort.",
+      "options": {
+        "o0": {
+          "label": "Passwörter wiederverwendet oder im Browser gespeichert",
+          "hint": "Hohes Risiko bei einem Verstoß oder einer Kontokompromittierung."
+        },
+        "o1": {
+          "label": "Ein einfacher Passwort-Manager",
+          "hint": "Schon ein sehr guter Schritt nach vorne."
+        },
+        "o2": {
+          "label": "Bitwarden / KeePassXC / Proton Pass",
+          "hint": "Eine gesunde Haltung, die einfach beizubehalten ist."
+        },
+        "o3": {
+          "label": "Passwort-Manager + einzigartige, lange Passwörter",
+          "hint": "Der robusteste Weg, den Schaden durch einen Verstoß zu reduzieren."
+        }
+      }
+    },
+    "twofa": {
+      "label": "Zwei-Faktor-Authentifizierung",
+      "prompt": "Welche Form der Zwei-Faktor-Authentifizierung nutzt du?",
+      "rec": "Stelle 2FA auf eine Authentifizierungs-App oder besser noch einen Hardware-Schlüssel um.",
+      "options": {
+        "o0": {
+          "label": "Kein 2FA",
+          "hint": "Die schwächste Stufe des Kontoschutzes."
+        },
+        "o1": {
+          "label": "SMS oder Anruf",
+          "hint": "Besser als nichts, aber leicht angreifbar."
+        },
+        "o2": {
+          "label": "TOTP in einer App (Aegis / Ente Auth)",
+          "hint": "Eine gute Schutzschicht für den Alltag."
+        },
+        "o3": {
+          "label": "Hardwareschlüssel oder Phishing-resistente 2FA",
+          "hint": "Die stärkste praktische Widerstandsstufe."
+        }
+      }
+    },
+    "storage": {
+      "label": "Speicher",
+      "prompt": "Wo speicherst du deine sensiblen Dateien?",
+      "rec": "Verschiebe vertrauliche Dateien zu Proton Drive, in einen Cryptomator-Tresor oder auf einen verschlüsselten lokalen Speicher.",
+      "options": {
+        "o0": {
+          "label": "Google Drive / iCloud / OneDrive",
+          "hint": "Sehr praktisch, aber zentral gelegen."
+        },
+        "o1": {
+          "label": "Proton Drive oder ein grundlegender verschlüsselter Speicherdienst",
+          "hint": "Eine echte Verbesserung."
+        },
+        "o2": {
+          "label": "Cryptomator oder lokaler verschlüsselter Speicher",
+          "hint": "Eine robustere Haltung."
+        },
+        "o3": {
+          "label": "Lokaler Speicher + Self-Hosting / erweiterte Verschlüsselung",
+          "hint": "Die konsequenteste Stufe digitaler Souveränität."
+        }
+      }
+    },
+    "social": {
+      "label": "Soziale Netzwerke",
+      "prompt": "Wo findet der Großteil deines sozialen Lebens online statt?",
+      "rec": "Verankere deine Präsenz in dezentralen Netzwerken und verringere deine Abhängigkeit von Plattformen.",
+      "options": {
+        "o0": {
+          "label": "Nur Meta/X/große Plattformen",
+          "hint": "Am einfachsten, aber auch dem größten Druck ausgesetzt."
+        },
+        "o1": {
+          "label": "Mastodon / Matrix / Nostr gelegentlich",
+          "hint": "Eine sinnvolle Abwechslung."
+        },
+        "o2": {
+          "label": "Ein Mix aus dezentralen Netzwerken und direktem Kontakt",
+          "hint": "Eine unabhängigere Haltung."
+        },
+        "o3": {
+          "label": "Alternative Netzwerke und geringe Plattformabhängigkeit",
+          "hint": "Das ist die wahre Logik des Widerstands."
+        }
+      }
+    },
+    "os": {
+      "label": "Betriebssystem",
+      "prompt": "Welches Betriebssystem nutzt du am häufigsten?",
+      "rec": "Wechsle auf Mobilgeräten zu GrapheneOS und auf dem Desktop zu Linux.",
+      "options": {
+        "o0": {
+          "label": "Android ab Werk / iOS / Windows",
+          "hint": "Sehr praktisch, aber viel weniger respektvoll gegenüber der Privatsphäre."
+        },
+        "o1": {
+          "label": "Ein privateres Android / Linux / macOS",
+          "hint": "Schon eine gute Verbesserung."
+        },
+        "o2": {
+          "label": "GrapheneOS / Linux / BSD",
+          "hint": "Eine stärkere Basis."
+        },
+        "o3": {
+          "label": "GrapheneOS + Linux + sorgfältige Setup-Disziplin",
+          "hint": "Schon eine sehr starke Haltung."
+        }
+      }
+    },
+    "tor": {
+      "label": "Tor & Anonymität",
+      "prompt": "Wie oft nutzt du Tor, Tails oder andere Anonymitätswerkzeuge?",
+      "rec": "Gewöhne dir für besonders sensible Aufgaben die Nutzung von Tor und bei Bedarf Tails an.",
+      "options": {
+        "o0": {
+          "label": "Fast nie",
+          "hint": "Sehr exponiert, falls die Bedrohung jemals ernst wird."
+        },
+        "o1": {
+          "label": "Gelegentlich, ohne viel Disziplin",
+          "hint": "Ein erster Schritt, aber noch fragil."
+        },
+        "o2": {
+          "label": "Tor für einige sensible Aufgaben",
+          "hint": "Schon ernster."
+        },
+        "o3": {
+          "label": "Tor + Tails mit starker Disziplin",
+          "hint": "Die am besten geeignete Ebene für einen Kontext mit hoher Bedrohung."
+        }
+      }
+    },
+    "money": {
+      "label": "Geld",
+      "prompt": "Wie gehst du mit deinem digitalen Geld um?",
+      "rec": "Nutze nach Möglichkeit datenschutzfreundliche Zahlungswege und getrennte Identitäten.",
+      "options": {
+        "o0": {
+          "label": "Nur Bankkarten und Standardkonten",
+          "hint": "Die Rückverfolgbarkeit ist hoch."
+        },
+        "o1": {
+          "label": "Einige weitere datenschutzbewusste Zahlungstools",
+          "hint": "Ein erster Trennungsversuch."
+        },
+        "o2": {
+          "label": "Eine Mischung aus privaten Konten und eingeschränkter Kryptonutzung",
+          "hint": "Schon bewusster."
+        },
+        "o3": {
+          "label": "Stärkere Praktiken der Finanzsouveränität",
+          "hint": "Eine viel ernstere Haltung."
+        }
+      }
+    }
+  },
+  "bands": {
+    "exposed": {
+      "title": "Ausgesetzt",
+      "summary": "Deine Konfiguration ist noch stark an die großen Plattformen gebunden. Die ersten Schritte sind einfach und wirkungsvoll."
+    },
+    "awakening": {
+      "title": "Erwachen",
+      "summary": "Du hast begonnen, deine Werkzeuge vielfältiger aufzustellen. Einige bewusste Änderungen können einen echten Unterschied machen."
+    },
+    "resistant": {
+      "title": "Widerstandsfähig",
+      "summary": "Deine Konfiguration ist bereits durchdacht. Du verfügst über eine solide Grundlage gegen Zensur und Überwachung."
+    },
+    "hardened": {
+      "title": "Gehärtet",
+      "summary": "Du nutzt einen gehärteten Software-Stack mit einer starken pseudonymen Grundlage. Als Nächstes zählen Disziplin und konsequente Trennung."
+    },
+    "sovereign": {
+      "title": "Souverän",
+      "summary": "Deine Schutzmaßnahmen sind bereits sehr stark. Mit anspruchsvollen technischen Entscheidungen bist du hoher digitaler Souveränität nahe."
+    }
+  }
+}

@@ -34,9 +34,15 @@ import nlObservatory from '../i18n/content/nl/observatory.json'
 import nlDirectory from '../i18n/content/nl/directory.json'
 import nlChecklist from '../i18n/content/nl/checklist.json'
 import nlAllies from '../i18n/content/nl/allies.json'
+import deEvents from '../i18n/content/de/events.json'
+import deObservatory from '../i18n/content/de/observatory.json'
+import deDirectory from '../i18n/content/de/directory.json'
+import deChecklist from '../i18n/content/de/checklist.json'
+import deAllies from '../i18n/content/de/allies.json'
 import enQuiz from '../i18n/content/en/quiz.json'
 import frQuiz from '../i18n/content/fr/quiz.json'
 import nlQuiz from '../i18n/content/nl/quiz.json'
+import deQuiz from '../i18n/content/de/quiz.json'
 
 /* ─── enums (mirroring pr1's content model) ────────────────────────────── */
 
@@ -178,31 +184,31 @@ const registry: Record<DatasetName, DatasetDef> = {
     core: eventsCore,
     coreSchema: eventCoreSchema,
     overlaySchema: proseOverlaySchema,
-    overlays: { en: enEvents, fr: frEvents, nl: nlEvents },
+    overlays: { en: enEvents, fr: frEvents, nl: nlEvents, de: deEvents },
   },
   observatory: {
     core: observatoryCore,
     coreSchema: observatoryCoreSchema,
     overlaySchema: proseOverlaySchema,
-    overlays: { en: enObservatory, fr: frObservatory, nl: nlObservatory },
+    overlays: { en: enObservatory, fr: frObservatory, nl: nlObservatory, de: deObservatory },
   },
   directory: {
     core: directoryCore,
     coreSchema: directoryCoreSchema,
     overlaySchema: bodyOverlaySchema,
-    overlays: { en: enDirectory, fr: frDirectory, nl: nlDirectory },
+    overlays: { en: enDirectory, fr: frDirectory, nl: nlDirectory, de: deDirectory },
   },
   checklist: {
     core: checklistCore,
     coreSchema: checklistCoreSchema,
     overlaySchema: bodyOverlaySchema,
-    overlays: { en: enChecklist, fr: frChecklist, nl: nlChecklist },
+    overlays: { en: enChecklist, fr: frChecklist, nl: nlChecklist, de: deChecklist },
   },
   allies: {
     core: alliesCore,
     coreSchema: allyCoreSchema,
     overlaySchema: roleOverlaySchema,
-    overlays: { en: enAllies, fr: frAllies, nl: nlAllies },
+    overlays: { en: enAllies, fr: frAllies, nl: nlAllies, de: deAllies },
   },
 }
 
@@ -332,7 +338,7 @@ export interface Quiz {
   questions: QuizQuestion[]
 }
 
-const quizOverlays: Record<Locale, OverlayFile> = { en: enQuiz, fr: frQuiz, nl: nlQuiz }
+const quizOverlays: Record<Locale, OverlayFile> = { en: enQuiz, fr: frQuiz, nl: nlQuiz, de: deQuiz }
 
 /**
  * Validates the language-neutral quiz core and the requested locale overlay,

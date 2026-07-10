@@ -1,0 +1,179 @@
+{
+  "site": {
+    "title": "Exit Chat Control · Werde unregierbar",
+    "description": "Ein praktischer Leitfaden, um der Chatkontrolle zu entkommen und deine digitale Privatsphäre zurückzugewinnen: verschlüsselte Messenger, E-Mail, VPN, DNS, Passwörter, Linux, GrapheneOS und Self-Hosting. Kostenlos, Open Source, ohne Tracking."
+  },
+  "nav": {
+    "skip": "Zum Inhalt springen",
+    "toc": "Inhalt",
+    "language": "Sprache",
+    "theme": "Design",
+    "themeToggle": "Dunkelmodus umschalten",
+    "toTop": "Zurück nach oben",
+    "quiz": "Quiz"
+  },
+  "banner": {
+    "reviewNote": "Dieser Abschnitt wird redaktionell geprüft."
+  },
+  "hero": {
+    "stamp": "Massenüberwachung · EU · 2026",
+    "eyebrow": "Ein Handbuch zur digitalen Souveränität",
+    "lede": "Die Chatkontrolle soll deine privaten Nachrichten scannen. Hier erfährst du Schritt für Schritt, wie du die Kontrolle über deine Gespräche, deine Daten und deine Werkzeuge zurückgewinnst – vom Einstieg bis zum Whistleblowing.",
+    "p1": "Bürger",
+    "p2": "Pseudonymes Konto",
+    "p3": "Whistleblower"
+  },
+  "status": {
+    "label": "Eilmeldung · 9. Juli 2026",
+    "headline": "Das Europäische Parlament hat die Chatkontrolle passieren lassen.",
+    "body": "Der Ablehnungsantrag scheiterte: 314 Abgeordnete stimmten gegen den Text, 276 dafür, 17 enthielten sich. Für eine Blockade wären 361 Stimmen nötig gewesen. Die Mehrheit wollte die Ablehnung, doch das Verfahren verhinderte sie. Ein Schutzwall wurde dennoch erkämpft: Ende-zu-Ende-verschlüsselte Messenger sind vom Scannen ausgenommen (die Änderungsanträge erhielten 369 beziehungsweise 362 Stimmen). Nun liegt der Text beim Rat: Wird er bis Oktober unterzeichnet, bleibt das „freiwillige“ Scannen deiner Nachrichten bis zum 3. April 2028 erlaubt. Parallel kehrt Chatkontrolle 2.0 (CSAR) – verpflichtendes Scannen auch verschlüsselter Messenger – im September an den Verhandlungstisch zurück. Die Gefahr ist nicht vorüber; sie wird dauerhaft verankert.",
+    "cta": "Jetzt ist das Zeitfenster für den Umstieg – solange du noch selbst entscheiden kannst.",
+    "sourceEp": "Pressemitteilung des EP, 9. Juli 2026",
+    "sourceVotes": "offizielle namentliche Ergebnisse"
+  },
+  "noscript": {
+    "notice": "JavaScript ist deaktiviert – guter Instinkt. Der gesamte Leitfaden funktioniert auch ohne; nur der Design-Umschalter, die Filter und die Checkliste benötigen Skripte."
+  },
+  "footer": {
+    "resources": "Ressourcen",
+    "sourcesLaw": "Quellen · das Gesetz",
+    "act": "Handeln",
+    "github": "Open Source auf GitHub",
+    "download": "Leitfaden herunterladen (1 Datei)",
+    "proofline": "Keine Tracker, keine Cookies, keine externen Anfragen. Alles – Schriftarten, Symbole und Stile – ist eingebettet. Prüfe es selbst: Öffne den Netzwerkmonitor und lade die Seite neu. Nichts wird an Dritte übertragen.",
+    "disclaimer": "Dieser Leitfaden informiert über den Schutz der Privatsphäre und die Verteidigung von Verschlüsselung. Er empfiehlt keine illegalen Aktivitäten. Prüfe stets die aktuelle Gesetzeslage: Die Situation ändert sich schnell.",
+    "factsUpdated": "Letzte Aktualisierung der Fakten: 10. Juli 2026.",
+    "support": "Unterstütze das Projekt",
+    "links": {
+      "council0207": "Rat der EU · 2. Juli 2026 Standpunkt in erster Lesung",
+      "ep2603": "Parlament · 26. März 2026 Ablehnung",
+      "ep0907": "Parlament · Änderungen vom 9. Juli 2026 (E2EE ausgenommen)",
+      "rollcalls": "Offizielle namentliche Ergebnisse · 9. Juli 2026",
+      "edps": "EDSB · Stellungnahme vom 16. Februar 2026 (PDF)",
+      "reg1232": "Verordnung (EU) 2021/1232",
+      "ccOverview": "Chatkontrolle 1.0 vs. 2.0",
+      "protonCss": "Proton · clientseitiges Scannen",
+      "jointAppeal": "Gemeinsamer Appell der Technologiegiganten (19. März 2026)",
+      "bigTechScan": "Big Tech verspricht, weiter zu scannen"
+    }
+  },
+  "sections2": {
+    "precedents": {
+      "eyebrow": "TEIL 23 · DIE BELEGE",
+      "title": "Dreißig Jahre Präzedenzfälle",
+      "intro": "Jeder Generation wird erzählt, die Überwachung sei neu, begrenzt und vorübergehend. Mit Datum und Quellen belegt: Seit 1993 läuft dasselbe Drehbuch. Klicke auf ein Datum, um einen Eintrag zu zitieren.",
+      "kinds": {
+        "promise": "das Versprechen",
+        "creep": "die schleichende Ausweitung",
+        "struck": "gekippt",
+        "revealed": "enthüllt"
+      }
+    },
+    "observatory": {
+      "eyebrow": "TEIL 24 · DIE VERSCHIEBUNG, LIVE",
+      "title": "Big-Brother-Observatorium",
+      "intro": "Die Chatkontrolle ist nur eine von fünf Fronten. Was wurde beschlossen, was liegt auf dem Tisch und was konnte zurückgedrängt werden – Region für Region, Thema für Thema.",
+      "filterRegion": "Region",
+      "filterTheme": "Thema",
+      "all": "Alle",
+      "regions": {
+        "eu": "EU",
+        "fr": "Frankreich",
+        "world": "Welt"
+      },
+      "themes": {
+        "messaging": "Nachrichten",
+        "identity": "Identität",
+        "money": "Geld",
+        "media": "Medien",
+        "aibio": "KI und Biometrie"
+      },
+      "statuses": {
+        "en_vigueur": "in Kraft",
+        "adopte": "angenommen",
+        "negociation": "in Verhandlung",
+        "propose": "vorgeschlagen",
+        "rejete": "abgelehnt",
+        "suspendu": "ausgesetzt",
+        "revele": "enthüllt"
+      }
+    },
+    "allies": {
+      "eyebrow": "TEIL 25 · DU BIST NICHT ALLEIN",
+      "title": "Verbündete Initiativen",
+      "intro": "Diese Organisationen kämpfen vor Gericht und in Parlamenten dagegen; diese Projekte dokumentieren die Belege.",
+      "campaigns": "Kampagnen & politische Arbeit",
+      "chroniclers": "Dokumentationsprojekte"
+    },
+    "directory": {
+      "eyebrow": "TEIL 26 · DAS ARSENAL",
+      "title": "Open-Source-Verzeichnis",
+      "intro": "66 freie Software-Werkzeuge in 14 Kategorien. Jeder Eintrag ist Open Source: überprüfbarer Code statt Vertrauen auf guten Willen.",
+      "categories": {
+        "messagerie": "Nachrichten",
+        "email": "E-Mail",
+        "navigation": "Browsen & Suchen",
+        "vpn-reseau": "VPN & Netzwerk",
+        "dns": "DNS",
+        "mots-de-passe": "Passwörter und 2FA",
+        "stockage-photos": "Speicherung, Fotos und Backups",
+        "quotidien": "Alltagswerkzeuge",
+        "social": "Soziale Netzwerke",
+        "ia-locale-agentique": "Lokale & agentische KI",
+        "os-mobile": "Betriebssysteme",
+        "selfhost": "Self-Hosting",
+        "finance": "Finanzen",
+        "opsec": "OPSEC und Whistleblowing"
+      }
+    },
+    "checklist": {
+      "eyebrow": "TEIL 27 · DER PLAN",
+      "title": "Checkliste für die Migration",
+      "intro": "Vierzehn Schritte – von schnellen Erfolgen in zehn Minuten bis zu Wochenendprojekten. Deine Häkchen werden nur in diesem Browser gespeichert. Nichts verlässt dein Gerät.",
+      "progress": "{done} / {total} Schritte erledigt",
+      "levels": {
+        "green": "schneller Erfolg",
+        "yellow": "braucht etwas Zeit",
+        "red": "fortgeschritten"
+      }
+    }
+  },
+  "manifesto": {
+    "label": "Manifest",
+    "p1": "Die Werkzeuge zu wechseln ist ein Akt persönlicher Verantwortung: So verweigern wir uns einer illegitimen Massenüberwachung.",
+    "p2": "Verschlüsseln heißt, <strong>dein Privatleben zu schützen</strong>. Self-Hosting heißt, <strong>dich der Überwachung durch Big Tech zu entziehen</strong>. Die Kontrolle über deine Werkzeuge zurückzugewinnen heißt, <mark>unregierbar und souverän zu werden</mark>.",
+    "p3": "Der Kampf ist politisch. Unterstütze Organisationen, die sich dagegenstellen, etwa die Initiative {link}, und schreibe deinen Abgeordneten. Genau das hätte die Chatkontrolle beinahe gestoppt.",
+    "p4": "Da die Lösung aber wahrscheinlich weder aus der Wahlurne noch aus dem Europäischen Parlament kommen wird, müssen wir unsere Freiheit selbst erringen und unsere Privatsphäre mit allen Mitteln schützen, die das Internet bietet."
+  },
+  "share": {
+    "label": "Gib es weiter",
+    "share": "Diesen Leitfaden teilen",
+    "copy": "Link kopieren",
+    "copied": "Link kopiert ✓",
+    "print": "Drucken / PDF"
+  },
+  "quiz": {
+    "stamp": "Lernquiz · 3 Min",
+    "eyebrow": "Schätze deine Widerstandsfähigkeit gegen Zensur ein",
+    "title": "Widerstandsquiz",
+    "lede": "Ein Kompass, keine Rangliste: Beantworte zwölf kurze Fragen, um Schwachstellen in deiner Konfiguration zu erkennen – ohne Vorwürfe – und setze anschließend konkrete Empfehlungen aus dem Leitfaden um.",
+    "privacyNote": "Die Punktzahl wird lokal in deinem Browser berechnet. Nichts wird gesendet oder gespeichert.",
+    "start": "Quiz starten",
+    "readGuide": "Vollständigen Leitfaden lesen",
+    "progress": "{done} / {total} beantwortet",
+    "completePrompt": "Beantworte alle zwölf Fragen, um deine Punktzahl zu sehen.",
+    "resultEyebrow": "Dein Ergebnis",
+    "outOf": "/ 100",
+    "barsHeading": "Punktzahl nach Bereich",
+    "recHeading": "Deine drei wichtigsten nächsten Schritte",
+    "openGuide": "Leitfaden öffnen →",
+    "restart": "Quiz wiederholen",
+    "copy": "Ergebnislink kopieren",
+    "copied": "Link kopiert ✓",
+    "share": "Teilen",
+    "shareX": "Beitrag auf X",
+    "shareText": "Meine Widerstandsfähigkeit gegen Zensur: {score}/100 – {band}. Prüfe deine:",
+    "bandsHeading": "Was die Punktzahl bedeutet",
+    "categoriesHeading": "Die zwölf Bereiche – und wo du dich verbessern kannst"
+  }
+}
