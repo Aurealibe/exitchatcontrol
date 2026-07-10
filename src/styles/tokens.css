@@ -445,7 +445,9 @@ a.tl-date:hover { color: var(--accent); text-decoration: underline; text-underli
 }
 
 /* ─── NEW · big brother observatory (#bigbrother) ─── */
+/* the five fronts ARE the thesis: one row of five on desktop, 2-up on phones */
 .bb-fronts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.6rem; margin: 1.4rem 0 0.4rem; }
+@media (min-width: 720px) { .bb-fronts { grid-template-columns: repeat(5, 1fr); } }
 .bbfront {
   text-align: left; cursor: pointer; font: inherit;
   border: 1px solid var(--rule); border-top: 3px solid var(--warn); border-radius: var(--radius);
