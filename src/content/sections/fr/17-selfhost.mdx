@@ -41,7 +41,7 @@ Le niveau ultime de souveraineté : héberger vos services vous-même. Vos donn�
     <li>Installez YunoHost, Umbrel ou Start9 en suivant leur guide officiel.</li>
     <li>Depuis le catalogue, installez Nextcloud, un serveur Matrix, une galerie photo, etc.</li>
     <li>
-      Accédez-y en privé avec Tailscale (fiche ci-dessous) plutôt que d'exposer le serveur au
+      Accédez-y en privé avec Tailscale (section VPN) plutôt que d'exposer le serveur au
       public.
     </li>
   </ol>
@@ -85,38 +85,6 @@ Le niveau ultime de souveraineté : héberger vos services vous-même. Vos donn�
   <Fragment slot="who">
     Communautés, collectifs, rédactions qui veulent leur espace fédéré indépendant.
   </Fragment>
-</ToolCard>
-
-<ToolCard tool="t-tailscale">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avancé</span>
-    <span class="tool-tag">Accès privé à son serveur</span>
-    <span class="tool-tag">🌍 · open-source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Un réseau privé chiffré qui relie vos appareils à votre serveur, sans jamais l'exposer sur
-    l'Internet public.
-  </Fragment>
-  <Fragment slot="why">
-    Au lieu d'ouvrir des ports (et de vous faire attaquer), <b>Tailscale</b> crée un tunnel
-    WireGuard entre vos seuls appareils autorisés : votre serveur n'a aucune surface d'attaque
-    publique. <b>Headscale</b> est la version que vous hébergez vous-même, pour ne dépendre d'aucun
-    tiers. <b>WireGuard</b> seul offre le contrôle total, au prix d'une configuration manuelle.
-  </Fragment>
-  <Fragment slot="who">
-    Tout auto-hébergeur. C'est la façon sûre d'atteindre son Nextcloud ou ses photos depuis
-    l'extérieur.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Installez Tailscale sur votre serveur et sur votre téléphone/PC, connectez-les au même compte.
-    </li>
-    <li>
-      Vos appareils se voient aussitôt sur un réseau privé ; accédez à votre serveur par son adresse
-      Tailscale.
-    </li>
-    <li>Pour zéro dépendance, remplacez le serveur de coordination par Headscale, auto-hébergé.</li>
-  </ol>
 </ToolCard>
 
 <ToolCard tool="t-website">
