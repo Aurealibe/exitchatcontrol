@@ -23,8 +23,10 @@ Its promises, all enforced by tests:
 pnpm install
 pnpm dev                # develop on http://localhost:4321
 pnpm build              # static site + offline artifact in dist/
-docker compose up preview   # prod-like: nginx + security headers on :8080
+docker compose -f docker-compose.dev.yml up preview   # prod-like: nginx + security headers on :8080
 ```
+
+Production deploys `docker-compose.yml` (single nginx service behind the platform's reverse proxy — Coolify, etc.), or point any static host at `pnpm build` → `dist/`.
 
 ## Contributing
 
