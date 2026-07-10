@@ -198,11 +198,11 @@
   {
     "id": "t-ublock",
     "name": "uBlock Origin",
-    "url": "https://ublockorigin.com",
+    "url": "https://github.com/gorhill/uBlock",
     "links": [
       {
-        "label": "ublockorigin.com",
-        "href": "https://ublockorigin.com"
+        "label": "github.com/gorhill/uBlock",
+        "href": "https://github.com/gorhill/uBlock"
       }
     ],
     "iconSlug": "ublockorigin",

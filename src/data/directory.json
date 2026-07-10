@@ -105,7 +105,7 @@
     "id": "ublock-origin",
     "category": "navigation",
     "name": "uBlock Origin",
-    "url": "https://ublockorigin.com",
+    "url": "https://github.com/gorhill/uBlock",
     "license": "GPL-3.0",
     "iconSlug": "ublockorigin"
   },
