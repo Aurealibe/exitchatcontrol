@@ -57,7 +57,7 @@ const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
             explicit choice, else follow the browser language once.
             No JS = English, which is the fallback anyway. */
       ;(() => {
-        const LANGS = ['en', 'fr', 'nl']
+        const LANGS = ['en', 'fr', 'nl', 'hu']
         const read = (key) => {
           try {
             return localStorage.getItem(key) || ''

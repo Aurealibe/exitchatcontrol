@@ -576,7 +576,7 @@
     color: var(--text-dim);
     display: inline-block;
     min-width: 1.7em;
-    margin-right: 0.4ch;
+    margin-right: 0.6ch;
   }
 
   /* ─── status banner (legacy "dernière minute" band) ─── */

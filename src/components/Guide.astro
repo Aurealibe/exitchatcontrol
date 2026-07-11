@@ -24,7 +24,24 @@ const { locale } = Astro.props
 const t = useT(locale)
 
 const entries = await getCollection('sections', ({ id }) => id.startsWith(`${locale}/`))
-entries.sort((a, b) => a.data.part - b.data.part || a.data.order - b.data.order)
+// Stable sort: part → order → slug. The slug tie-breaker keeps the TOC
+// deterministic even when two frontmatters accidentally share part/order.
+entries.sort(
+  (a, b) => a.data.part - b.data.part || a.data.order - b.data.order || a.id.localeCompare(b.id),
+)
+
+// Defensive: fail the build with a clear message if two sections share the
+// same frontmatter id (a copy/paste drift). This prevents silent duplicates.
+const seenIds = new Set<string>()
+for (const entry of entries) {
+  if (seenIds.has(entry.data.id)) {
+    throw new Error(
+      `[Guide] Duplicate section id "${entry.data.id}" in locale "${locale}" (file: ${entry.id})`,
+    )
+  }
+  seenIds.add(entry.data.id)
+}
+
 const sections = await Promise.all(
   entries.map(async (entry) => ({ data: entry.data, Content: (await render(entry)).Content })),
 )
@@ -41,7 +58,7 @@ const tocEntries = [
   ...sections.map(({ data }) => ({ id: data.id, title: data.title })),
   ...dataSections,
   { id: 'manifesto', title: t('manifesto.label') },
-].map((s, i) => ({ ...s, prefix: String(i).padStart(2, '0') }))
+].map((s, i) => ({ ...s, prefix: `${String(i).padStart(2, '0')}.` }))
 ---
 
 <Hero locale={locale} />
@@ -61,7 +78,7 @@ const tocEntries = [
               <span class="toc-p" aria-hidden="true">
                 {s.prefix}
               </span>
-              {s.title}
+              &nbsp;{s.title}
             </a>
           </li>
         ))
