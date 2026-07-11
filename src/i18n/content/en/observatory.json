@@ -127,6 +127,10 @@
     "title": "FISA 702 lapses, collection carries on anyway",
     "body": "Section 702, the warrantless collection of communications transiting US providers, was due to expire in April 2026. Two short extensions later, the authority lapses mid-June with Congress deadlocked over requiring a warrant for FBI searches of Americans. But existing certifications remain valid until March 2027: the machine runs another year on no renewed basis. A \"temporary\" surveillance power never quite switches off."
   },
+  "uk-under16-ban": {
+    "title": "UK: social media banned for under-16s",
+    "body": "The government announces a social-media ban for under-16s: Snapchat, TikTok, YouTube, Instagram, Facebook, X (messaging apps excluded), regulations laid before Christmas 2026, in force by spring 2027. To ban minors, everyone's age must be checked — “highly effective” age assurance becomes the entry condition for social media itself, no longer just for adult sites."
+  },
   "euro-numerique-econ": {
     "title": "Digital euro: \"not programmable\", yet conditional",
     "body": "Parliament’s ECON committee adopts its position (43 votes to 14, one abstention): course set for a launch by 2029. The ECB’s own FAQ swears the digital euro \"will not be programmable money\", while presenting \"conditional payments\" as optional services; under the MEPs’ position, the holding cap would be set later by the Commission on the ECB’s recommendation, reviewed every two years. The gap between the promise and the platform rests on a political decision, not a technical impossibility: the conditionality and traceability infrastructure will exist from day one."
@@ -135,8 +139,28 @@
     "title": "Europol: budget raised to €3 billion, a mandate on encryption",
     "body": "The Commission proposes Europol’s biggest overhaul in 25 years: budget up from €1.9bn to €3bn, 900 extra staff, a mandate extended to encrypted communications, crypto-assets and AI-assisted fraud; a \"technology and innovation hub\" whose encryption work follows the ProtectEU roadmap (which schedules a Europol decryption capability by 2030); an automated \"European police data space\". ProtectEU’s armed wing: a supranational agency one MEP already warns \"must not lead to mass surveillance\"."
   },
+  "ai-act-omnibus-delay": {
+    "title": "High-risk AI: the safeguards can wait until 2027",
+    "body": "The Council seals the “Omnibus VII”: the AI Act obligations for Annex III high-risk systems — biometrics, policing, migration, employment — due to apply on 2 August 2026 are pushed back to 2 December 2027 (stand-alone systems) and 2 August 2028 (embedded ones), in the name of “simplification”. The same text bans AI-generated sexual deepfakes and CSAM — but the safeguards on surveillance AI will wait."
+  },
   "pega-kouloglou": {
     "title": "Pegasus in Parliament: the watchdog was being watched",
     "body": "Citizen Lab reveals that MEP Stelios Kouloglou, a substitute member of the PEGA committee, the very body that investigated Pegasus and spyware abuse in Europe, was hacked with Pegasus while serving on it (infections dated 21 October 2022 and 6–7 March 2023), with possible access to confidential deliberations. Citizen Lab explicitly declines to attribute the attack; a coalition of NGOs demands an EU response. Spying on the body tasked with overseeing spyware is the ultimate inversion of democratic oversight, and nobody is named responsible."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas: the app store checks everyone's age, and the Supreme Court lets it stand",
+    "body": "The Supreme Court declines (docket 25A1390, CCIA v. Paxton) to lift the Texas App Store Accountability Act: Apple and Google must verify the age of every app-store user in Texas and require parental consent for minors, while the First Amendment challenge is litigated on the merits. Identity checks no longer guard one site's door: they guard the whole app store."
+  },
+  "ripost-vsa-supprime": {
+    "title": "RIPOST: the algorithmic-CCTV extension deleted at first reading",
+    "body": "The National Assembly adopts the RIPOST public-order bill at first reading, but Article 19 — which extended the Olympics-era algorithmic video-surveillance experiment until 31 December 2030 and widened its scope — was deleted during examination, as was Article 22 (video surveillance in police custody). The rampart holds at this stage; the parliamentary shuttle continues."
+  },
+  "euro-numerique-mandat": {
+    "title": "Digital euro: Parliament confirms its mandate, trilogues begin",
+    "body": "The plenary confirms the negotiating mandate (416 for, 169 against): trilogues with the Council open on 13 July. The mandate claims safeguards — cash protections, transaction verification without exposing personal data — and leaves the holding cap to the Commission on the ECB's recommendation. The decisive step toward traceable money is taken; the safeguards remain to be negotiated."
+  },
+  "ofcom-fapello": {
+    "title": "UK: the first heavy fines for missing age checks",
+    "body": "Ofcom fines the operator of fapello.com £630,000: £600,000 for lacking the “highly effective” age assurance the Online Safety Act requires, £30,000 for ignoring a legally binding information request. The identity-check infrastructure is no longer a principle: it is now punitive, site by site."
   }
 }
