@@ -70,6 +70,7 @@ Telegram (chats normaux)
 Signal
 SimpleX Chat
 Session
+DeltaChat
 Bitchat
 Element (Matrix)
 Nostr
@@ -138,6 +139,19 @@ Installez depuis getsession.org (toutes plateformes).
 Notez la phrase de récupération sur papier : c’est la seule clé de votre compte.
 Partagez votre Session ID (ou QR) à vos contacts.
 getsession.org →🟡🔴
+DeltaChat
+🟡 BeginnerNo identifier🌍 · open-source
+À quoi ça sert ?
+Une messagerie décentralisée reposant sur le protocole de messagerie électronique. Pas de création de compte, pas de numéro de téléphone, pas d'adresse e-mail à partager. Vous vous connectez en partageant un lien ou un code QR.
+Pourquoi
+Il s'agit d'un système audité, open source, avec chiffrement de bout en bout et minimisation des métadonnées : aucune entreprise ne détient donc votre identité ni votre réseau de contacts.
+Pour qui & quand
+Pour les personnes qui souhaitent disposer d'un compte privé ou pseudonyme, sans avoir à fournir d'informations personnelles, sans dépendance vis-à-vis d'un fournisseur et sans application liée à un numéro de téléphone.
+Installer & utiliser
+Installez l’application depuis delta.chat (toutes plateformes).
+Au premier lancement, créez un compte anonyme gratuit sur un relais Chatmail public — aucune information personnelle n’est demandée.
+Ajoutez un contact en scannant son code QR ou en partageant un lien d’invitation — cela garantit un chiffrement de bout en bout vérifié avec ce contact.
+delta.chat →🟢🟡🔴
 Br
 Briar
 🔴 AvancéHors-ligne / P2PAndroid · open-source
@@ -382,6 +396,23 @@ Paiement anonyme en crypto : cliquez sur « Créer une adresse de paiement à us
 Téléchargez l’application sur mullvad.net/download (via Tor si le site est filtré) et installez-la. Sur mobile, passez par l’App Store, Google Play, ou l’APK officiel si l’application a été retirée de votre magasin.
 Lancez l’application, entrez votre numéro de compte, puis connectez-vous à un serveur situé hors de votre pays, idéalement hors Union européenne (Suisse, États-Unis…). Activez le « kill switch » (qui coupe Internet si le VPN tombe) et le DNS de Mullvad.
 mullvad.net →🟢🟡🔴
+Ny
+Nym VPN
+🟢🟡🔴 Tous niveauxSans compte · cash/cryptomonnaies🇨🇭 · open-source
+À quoi ça sert
+Un VPN qui masque votre adresse IP et chiffre votre trafic jusqu’à ses serveurs, sans jamais vous demander la moindre information personnelle.
+Pourquoi
+C'est la référence absolue en matière de confidentialité. Pas d'e-mail, pas de nom : lors de l'inscription, on vous attribue un simple numéro de compte. Une politique de non-conservation des logs vérifiée par un organisme indépendant, un tarif unique et transparent (2,69 € par mois, sans paliers tarifaires ni fausses promesses), et un paiement en espèces ou en cryptomonnaies. C’est exactement ce qui compte le jour où un État tentera de bloquer l’accès au VPN : un compte qui ne peut pas être associé à votre identité, et un paiement que les banques ne peuvent pas bloquer.
+Pour qui & quand
+Tout le monde, du citoyen qui veut contourner une vérification d’identité au profil à haut risque. C’est le VPN à recommander en priorité.
+Installer & utiliser
+Allez sur nym.com. Aucune adresse e-mail ni nom ne vous est demandé. Choisissez la durée et le mode de paiement. Trois options s’offrent à vous : carte bancaire (la solution la plus simple si elle n’est pas bloquée), argent liquide envoyé par la poste ou cryptomonnaie.
+Enregistrez les 24 mots dans votre gestionnaire de mots de passe et ne les partagez jamais : c’est votre seule clé d’accès.
+Paiement crypté anonyme : cliquez sur « Créer une adresse de paiement à usage unique ». Nym affiche une adresse (Bitcoin ou cryptomonnaies) et un montant précis. Envoyez ce montant depuis votre portefeuille. Pour un anonymat maximal, privilégiez Monero (privé par défaut) ; Bitcoin est plus simple mais traçable. Reportez-vous à la section 13 pour acheter des cryptomonnaies. Comptez environ 30 minutes pour la confirmation.
+Téléchargez l’application depuis nym.com/download et installez-la. Sur mobile, utilisez l’App Store, Google Play ou l’APK officiel si l’application a été retirée de votre boutique d’applications.
+Lancez l’application, saisissez les 24 mots de votre compte, puis connectez-vous à un serveur situé en dehors de votre pays, idéalement en dehors de l’UE (Suisse, États-Unis…). Activez le « kill switch » (qui coupe la connexion Internet en cas de déconnexion du VPN) et activez le blocage des publicités.
+Le mode Mixnet offre une protection complète des métadonnées grâce à une connexion à 5 sauts via le Noise Generating Mixnet de Nym. Utilisez-le pour vos transactions cryptographiques et vos échanges de messages.
+nym.com →🟢🟡🔴
 Pv
 Proton VPN
 🟢 DébutantOffre gratuite honnête🇨🇭 · open-source
