@@ -70,6 +70,7 @@ Adopt
 Signal
 SimpleX Chat
 Session
+DeltaChat
 Bitchat
 Element (Matrix)
 Nostr
@@ -138,6 +139,20 @@ Install from getsession.org (all platforms).
 Write the recovery phrase on paper: it’s the only key to your account.
 Share your Session ID (or QR) with your contacts.
 getsession.org →🟡🔴
+Dc
+DeltaChat
+🟡 BeginnerNo identifier🌍 · open-source
+What it's for
+A decentralized messenger built on top of email protocol. No new account system, no phone number, no email address to share. You connect by sharing a link or QR code.
+Why it matters
+It's audited, open-source end-to-end encryption with metadata-minimization, so no company owns your identity or your contact graph.
+For whom & when
+People who want a private/pseudonymous account with no personal info required, no vendor lock-in, no phone-number-tied app.
+Install & use
+Install from delta.chat (all platforms).
+On first launch, create a free anonymous account on a public chatmail relay — no personal details asked.
+Add a contact by scanning their QR code or sharing an invite link — this guarantees verified end-to-end encryption with that contact.
+delta.chat →🟢🟡🔴
 Br
 Briar
 🔴 AdvancedOffline / P2PAndroid · open-source
@@ -382,6 +397,23 @@ Anonymous crypto payment: click “Create a one-time payment address.” Mullvad
 Download the app from mullvad.net/download (via Tor if the site is filtered) and install it. On mobile, use the App Store, Google Play, or the official APK if the app was pulled from your store.
 Launch the app, enter your account number, then connect to a server outside your country, ideally outside the EU (Switzerland, US…). Enable the “kill switch” (which cuts the internet if the VPN drops) and Mullvad’s DNS.
 mullvad.net →🟢🟡🔴
+Ny
+Nym VPN
+🟢🟡🔴 All levelsNo account · cash/Cryptocurrencies🇨🇭 · open-source
+What it's for
+A VPN that masks your IP address and encrypts your traffic up to its servers, without ever asking for a single piece of personal information.
+Why it matters
+It’s the privacy gold standard. No email, no name: at signup you’re given a plain account number. Audited no-log policy, a single honest price (€2.69 per month, no tiers, no false promises), and payment in cash or Cryptocurrencies. That’s exactly what matters the day a state tries to cut off VPN access: an account that can’t be tied to your identity, and a payment banks can’t block.
+For whom & when
+Everyone, from the citizen bypassing an ID check to the high-risk profile. It’s the VPN to recommend first.
+Install & use
+Go to nym.com. No email or name is asked. Choose the duration and payment method. Three routes: bank card (simplest if not blocked), cash sent by post, or cryptocurrency.
+Save the 24 words in your password manager and never share it, it’s your only access key.
+Anonymous crypto payment: click “Create a one-time payment address.” Mullvad shows an address (Bitcoin or Monero) and an exact amount. Send that amount from your wallet. For maximum anonymity, prefer Monero (private by default); Bitcoin is simpler but traceable. See section 13 to buy crypto. Allow about 30 minutes for confirmation.
+Download the app from nym.com/download and install it. On mobile, use the App Store, Google Play, or the official APK if the app was pulled from your store.
+Launch the app, enter your account 24 words, then connect to a server outside your country, ideally outside the EU (Switzerland, US…). Enable the “kill switch” (which cuts the internet if the VPN drops) and enable Ad blocking.
+The Mixnet mode offers a complete metadata protection using a 5-hop connection through Nym's Noise Generating Mixnet. Use it for crypto transactions and messaging.
+nym.com →🟢🟡🔴
 Pv
 Proton VPN
 🟢 BeginnerHonest free tier🇨🇭 · open-source

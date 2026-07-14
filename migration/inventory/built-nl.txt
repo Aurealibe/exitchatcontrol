@@ -70,6 +70,7 @@ Overstappen
 Signal
 SimpleX Chat
 Session
+DeltaChat
 Bitchat
 Element (Matrix)
 Nostr
