@@ -287,9 +287,21 @@
   main section th,
   main section td {
     text-align: left;
-    padding: 0.6rem 0.8rem;
+    padding: 1rem;
     border-bottom: 1px solid var(--rule);
     vertical-align: top;
+    line-height: 1.6;
+  }
+  main section thead th:first-child {
+    width: 8rem;
+  }
+  main section tbody td:first-child {
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    padding-right: 1.5rem;
   }
   main section thead th {
     font-family: var(--font-mono);
@@ -298,6 +310,7 @@
     text-transform: uppercase;
     color: var(--text-dim);
     background: var(--surface-2);
+    padding: 0.9rem 1rem;
   }
   main section tbody tr:last-child td {
     border-bottom: none;
